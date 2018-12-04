@@ -1,0 +1,38 @@
+SELECT P_pnom, P_pprenom, P_pddn, P_psex, P_adr1, P_adr2, P_codp, P_ville, P_ptel, P_tel2, P_tel3, P_texte_libre
+FROM basemdk.s_patients
+
+SELECT Fod_Id, Fod_Fk, Fod_From, Fod_Name_Doc, Fod_Path_Doc, Fod_Type, Fod_FK_P_pnum_id, OLDKEY_S_F_Others_Docs
+FROM basemdk.s_f_others_docs
+WHERE Fod_FK_P_pnum_id='681';
+
+
+-- SELECT Cons_cfc, Cons_cdate, Cons_ctasdd, Cons_ctaddd, Cons_ctasdg, Cons_ctaddg, Cons_ctascd, Cons_ctadcd, Cons_ctascg, Cons_ctadcg, Cons_ctaille, Cons_cpoids, Cons_csympto, Cons_cexamen, Cons_cconvis, Cons_cnpo, Cons_id, Cons_creg, Cons_causccard, Cons_cmotifprincip, Cons_cald, Cons_crenouvellement, Cons_coduree, Cons_cmaj, Cons_cflag_ta, Cons_FK_E_num_med_id, Cons_cnum_rpct, Cons_cheure, Cons_cduree, Cons_ccontactrv, Cons_cetat, Cons_crmo, Cons_date_bcb, Cons_xxx, Cons_cconclu, Cons_cat, Cons_ckilos, Cons_c_accid_trav, Cons_xxy, Cons_cmotif_agd, Cons_cdate_at, Cons_clearance_creat, Cons_euro, Cons_tot_doc, Cons_historique_modif, Cons_is_modif, Cons_tot_maq, Cons_FK_P_pnum_id, Cons_L_maquette_txt, Cons_Liste_Mapa_txt, OLDKEY_S_Consultations, Cons_secretaire
+SELECT Cons_cdate, Cons_cmotifprincip, Cons_csympto, Cons_cexamen, Cons_causccard,   Cons_ckilos, Cons_FK_P_pnum_id
+FROM basemdk.s_consultations
+-- WHERE Cons_cdate='2018-11-26';
+WHERE Cons_FK_P_pnum_id=16566;
+
+
+SELECT Lo_id, Lo_lqte, Lo_poso, Lo_dci, Lo_ald, Lo_duree, Lo_idem, Lo_type1, Lo_type2, Lo_mat, Lo_midi, Lo_16h, Lo_soir, Lo_cou, Lo_freq1, Lo_freq2, Lo_forme, Lo_rmo, Lo_autoposo, Lo_price_day, Lo_price_box, Lo_nps, Lo_order, Lo_10h, Lo_repas, Lo_nr, Lo_bis, Lo_FK_Cons_id, Lo_FK_Vidal_id, Lo_liste_sfmg_txt, OLDKEY_S_LignOrdo, Lo_tt_fond, Lo_auteur, Lo_Code_Up, Lo_Type_Up, Lo_nbre_boite, Lo_auteur_arret, Lo_motif_arret, Lo_date_Arret
+FROM basemdk.s_lignordo
+WHERE Lo_id=367000;
+
+
+SELECT Vidal_nommed, Vidal_cip, Vidal_forme_medic, Vidal_semp, Vidal_condit, Vidal_forme_semp, Vidal_id, Vidal_conseil, Vidal_taux, Vidal_tableau, Vidal_collect, Vidal_dispo, Vidal_no_medic, Vidal_nb_dans_boite, Vidal_prix_boite_fr, Vidal_xxx, Vidal_rmo, Vidal_type1, Vidal_type2, Vidal_matin, Vidal_midi, Vidal_16h, Vidal_soir, Vidal_coucher, Vidal_freq1, Vidal_freq2, Vidal_auto_poso, Vidal_incompatex, Vidal_eco_semp, Vidal_eco_med, Vidal_from_base, Vidal_court_long_perso, Vidal_prix_boite_euro, Vidal_forme_bcb, Vidal_dci, Vidal_cip_moin_cher_bcb, Vidal_notice, Vidal_10h, Vidal_repas, Vidal_liste_patho_txt, OLDKEY_S_Vidal, Vidal_Class_ATC, Vidal_code_ucd, Vidal_code_cis, Vidal_type, Vidal_isMedDC, Vidal_ComplementLibelle
+FROM basemdk.s_vidal
+WHERE Vidal_id=9564;
+
+
+SELECT Ant_date, Ant_depuis, Ant_texte, Ant_id, Ant_maj, Ant_fam, Ant_an, Ant_incertain, Ant_alerte, Ant_resume, Ant_nomad, Ant_tot_doc, Ant_FK_Cons_id, Ant_FK_Pat_id, Ant_FK_P_pnum_id, Ant_FK_Spe_snes_id, Ant_Fk_E_num_med_id, OLDKEY_S_Antecedent, Ant_Dmp, Ant_FK_remplacant, Ant_FK_secretaire, Ant_status, Ant_status_date, Ant_Perso_Type
+FROM basemdk.s_antecedent;
+
+SELECT Fap_Id, Fap_P_pnum_id, Fap_Allergie_type, Fap_Allerge_Code, Fap_Allergie_Nom, Fap_Allergie_Intol, Fap_Allergie_Comment, Fap_Allergie_Base_Pref, OLDKEY_S_F_Allergies_Pat, Fap_Dmp, Fap_status, Fap_status_date, Fap_FK_E_num_med_id
+FROM basemdk.s_f_allergies_pat;
+
+
+SELECT Certif_phrase, Certif_id, Certif_en_tete, Certif_date, Certif_titre, Certif_nomad, Certif_pc_h, Certif_textedit, Certif_typ_papier, Certif_chemin, Certif_type, Certif_Fk_E_num_med_id, Certif_numrpc, Certif_screen, Certif_report, Certif_important, Certif_max_page, Certif_FK_Cons_id, Certif_FK_P_pnum_id, OLDKEY_S_CERTIFICAT, Certif_secretaire
+FROM basemdk.s_certificat;
+
+
+SELECT C_id, C_entete, C_write, C_texte2, C_my_dear, C_date, C_nomad, Cpc_heure, C_textedit, C_auto, C_important, C_a_corriger, C_chemin, C_type, C_adressage, C_FK_E_num_med_id, C_numrpc, C_screen, C_report, C_nbre_copie, C_is_mail, C_date_mail, C_FK_Cons_id, C_FK_P_pnum_id, C_FK_Spe_snes_id, OLDKEY_S_Courrier, C_secretaire, C_Titre
+FROM basemdk.s_courrier;
