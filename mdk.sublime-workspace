@@ -1,0 +1,2081 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"Poem",
+				"PoemTestCase"
+			],
+			[
+				"get",
+				"get_venv_path\tfunction"
+			],
+			[
+				"pyth",
+				"python_interpreter\tstatement"
+			],
+			[
+				"com",
+				"compat\tmodule"
+			],
+			[
+				"po",
+				"popen_out\tstatement"
+			],
+			[
+				"fie",
+				"find_pyproject\tstatement"
+			],
+			[
+				"chec",
+				"check_output\tfunction"
+			],
+			[
+				"fin",
+				"find_root_file\tfunction"
+			],
+			[
+				"project",
+				"project_data"
+			],
+			[
+				"def",
+				"defautdict\tmodule"
+			],
+			[
+				"pyp",
+				"pyproject\tstatement"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"P",
+				"PoemSetPythonInterpreter"
+			],
+			[
+				"py",
+				"pyproject\tstatement"
+			],
+			[
+				"NS",
+				"SETTINGS_NS_PREFIX"
+			],
+			[
+				"poem",
+				"poem_log"
+			],
+			[
+				"T",
+				"TestCase\tclass"
+			],
+			[
+				"TestCas",
+				"TestCaseBlack\tclass"
+			],
+			[
+				"Tes",
+				"TestBlack\tclass"
+			],
+			[
+				"Test",
+				"TestCaseBlack\tclass"
+			],
+			[
+				"uni",
+				"unittest\tmodule"
+			],
+			[
+				"TEst",
+				"TestCaseBlack\tclass"
+			],
+			[
+				"has",
+				"hasattr\tfunction"
+			],
+			[
+				"pre",
+				"pre_commit_config"
+			],
+			[
+				"s",
+				"sublack"
+			],
+			[
+				"N",
+				"NamedTemporaryFile\tfunction"
+			],
+			[
+				"star",
+				"startswith"
+			],
+			[
+				"split",
+				"splitlines"
+			],
+			[
+				"git",
+				"gitignore"
+			],
+			[
+				"ne",
+				"new_line\tstatement"
+			],
+			[
+				"add",
+				"add_to_cache"
+			],
+			[
+				"for",
+				"formatted_cache"
+			],
+			[
+				"assert",
+				"assertEqual\tfunction"
+			],
+			[
+				"cmd",
+				"cmd1"
+			],
+			[
+				"tem",
+				"tempfile\tmodule"
+			],
+			[
+				"asser",
+				"assertEqual\tfunction"
+			],
+			[
+				"asse",
+				"assertFalse\tfunction"
+			],
+			[
+				"hash",
+				"hash\tfunction"
+			],
+			[
+				"lis",
+				"list_of_torrent_link\tstatement"
+			],
+			[
+				"down",
+				"download_url"
+			],
+			[
+				"del",
+				"delete_data\tparam"
+			],
+			[
+				"Remove",
+				"remove_torrent\tfunction"
+			],
+			[
+				"le",
+				"leclient\tstatement"
+			],
+			[
+				"tourrent",
+				"tourrentbot\tmodule"
+			],
+			[
+				"bo",
+				"Bot"
+			],
+			[
+				"se",
+				"sendMessage"
+			],
+			[
+				"Inlin",
+				"InlineKeyboardMarkup\tclass"
+			],
+			[
+				"INl",
+				"InlineKeyboardButton\tclass"
+			],
+			[
+				"tor",
+				"tor_list\tstatement"
+			],
+			[
+				"en",
+				"envoie_les_propositions_choix\tfunction"
+			],
+			[
+				"do",
+				"downloaded_filchier\tstatement"
+			],
+			[
+				"st",
+				"status_code\tstatement"
+			],
+			[
+				"tou",
+				"tourrentbot\tmodule"
+			],
+			[
+				"env",
+				"envoie_via_telegram\tfunction"
+			],
+			[
+				"list",
+				"list_of_names\tparam"
+			],
+			[
+				"yg",
+				"yg_params\tstatement"
+			],
+			[
+				"t",
+				"torrent"
+			],
+			[
+				"dwon",
+				"download_dot_torrent_file\tfunction"
+			],
+			[
+				"YG",
+				"YG_LOGOUT_URL\tstatement"
+			],
+			[
+				"is",
+				"issubset\tfunction"
+			],
+			[
+				"Ke",
+				"KeyError\tclass"
+			],
+			[
+				"__",
+				"__file__\tinstance"
+			],
+			[
+				"con",
+				"convert_name_to_download_link\tfunction"
+			],
+			[
+				"YG_",
+				"YG_DOWNLOAD_URL\tstatement"
+			],
+			[
+				"YG_D",
+				"YG_DOWNLOAD_URL\tstatement"
+			],
+			[
+				"a",
+				"abc\tmodule"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pyproject.toml",
+			"settings":
+			{
+				"buffer_size": 305,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mdk_backup/__init__.py",
+			"settings":
+			{
+				"buffer_size": 85,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mdk_backup/requetes.txt",
+			"settings":
+			{
+				"buffer_size": 3927,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mdk_backup/main.py",
+			"settings":
+			{
+				"buffer_size": 4680,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/MagicPython/settings/sublime/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/MagicPython/settings/sublime/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/MagicPython/settings/sublime/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/python36.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/MagicPython/settings/sublime/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 222.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"poetryset",
+				"Poetry: Set python interpreter"
+			],
+			[
+				"poetry",
+				"Poetry: Install in Selected Venv"
+			],
+			[
+				"poetry in",
+				"Poetry: Install"
+			],
+			[
+				"poetry selc",
+				"Poetry: Install in Selected Venv"
+			],
+			[
+				"poe upda",
+				"Poetry: Update"
+			],
+			[
+				"push",
+				"git: push"
+			],
+			[
+				"qs",
+				"git: quick stage"
+			],
+			[
+				"vie",
+				"View In Browser"
+			],
+			[
+				"vi",
+				"View In Browser"
+			],
+			[
+				"tcp",
+				"UnitTesting: Test Current Package"
+			],
+			[
+				"form",
+				"Sublack: Format all"
+			],
+			[
+				"sati",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"start",
+				"Sublack: Start Blackd Server"
+			],
+			[
+				"pul",
+				"git: pull"
+			],
+			[
+				"sat",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"depen",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"packagup",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"satis",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"packa",
+				"Package Control: Remove Repository"
+			],
+			[
+				"remov",
+				"Package Control: Remove Channel"
+			],
+			[
+				"pack",
+				"View Package File"
+			],
+			[
+				"pull",
+				"git: pull"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"unit",
+				"UnitTesting: Test Current Package"
+			],
+			[
+				"star",
+				"Sublack: Start Blackd Server"
+			],
+			[
+				"to",
+				"Toggle Comment"
+			],
+			[
+				"u",
+				"UnitTesting"
+			],
+			[
+				"pro",
+				"Project: Edit"
+			],
+			[
+				"refre",
+				"Project: Refresh Folders"
+			],
+			[
+				"uni",
+				"UnitTesting"
+			],
+			[
+				"clo",
+				"git: clone"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pip",
+				"Package Control: Install Package"
+			],
+			[
+				"bran",
+				"git: branch"
+			],
+			[
+				"tcf",
+				"UnitTesting: Test Current File"
+			],
+			[
+				"togg",
+				"Toggle Comment"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remotra",
+				"git: checkout remote branch as local"
+			],
+			[
+				"bra",
+				"git: branch"
+			],
+			[
+				"fet",
+				"git: fetch"
+			],
+			[
+				"clone",
+				"git: clone"
+			],
+			[
+				"stashsa",
+				"git: stash save"
+			],
+			[
+				"push ta",
+				"git: push all tags"
+			],
+			[
+				"tag",
+				"git: quick tag"
+			],
+			[
+				"log",
+				"git: log"
+			],
+			[
+				"stash",
+				"git: stash save"
+			],
+			[
+				"diff",
+				"Sublack: Diff file"
+			],
+			[
+				"statu",
+				"git: status"
+			],
+			[
+				"black",
+				"Sublack: Format all"
+			],
+			[
+				"pu",
+				"git: pull"
+			],
+			[
+				"forma",
+				"Sublack: Format file"
+			],
+			[
+				"subl",
+				"Sublack: Format file"
+			],
+			[
+				"q",
+				"git: quick commit"
+			],
+			[
+				"pus",
+				"git: push"
+			],
+			[
+				"puhs",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"actia",
+				"Virtualenv: Activate"
+			],
+			[
+				"acti",
+				"Virtualenv: Activate"
+			],
+			[
+				"merg",
+				"Git: Merge Branch"
+			],
+			[
+				"chan",
+				"Git: Change Branch"
+			],
+			[
+				"merge",
+				"Git: Merge Branch"
+			],
+			[
+				"cha",
+				"Git: Change Branch"
+			],
+			[
+				"del",
+				"Git: Delete Branch"
+			],
+			[
+				"dele",
+				"Git: Delete Branch"
+			],
+			[
+				"ranc",
+				"Git: New Branch"
+			],
+			[
+				"git",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"gitgu",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"gitgut",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"de",
+				"Git: Delete Branch"
+			],
+			[
+				"gitg",
+				"GitGutter: Compare Against Origin"
+			],
+			[
+				"gitgutt",
+				"GitGutter: Compare Against Origin"
+			],
+			[
+				"mer",
+				"Git: Merge Branch"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"gitq",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"setv",
+				"Django: Set Virtual Environment"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"change",
+				"Git: Change Branch"
+			],
+			[
+				"ch",
+				"Git: Checkout Current File"
+			],
+			[
+				"pyte",
+				"PyTest: Run"
+			],
+			[
+				"virt",
+				"Virtualenv: Activate"
+			],
+			[
+				"sort",
+				"ImportSort: Sort imports"
+			],
+			[
+				"ad",
+				"Git: Add All"
+			],
+			[
+				"qui",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"branch",
+				"Git: Push Current Branch"
+			],
+			[
+				"git brn",
+				"Git: New Branch"
+			],
+			[
+				"gut",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"brach",
+				"Git: New Branch"
+			],
+			[
+				"dif",
+				"Git: Diff Current File"
+			],
+			[
+				"res",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"quic",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"chec",
+				"Git: Change Branch"
+			],
+			[
+				"quick",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git: check",
+				"Git: Checkout Current File"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git a",
+				"Git: Add All"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"packli",
+				"Package Control: List Packages"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"test",
+				"Anaconda: Run Current File Tests"
+			],
+			[
+				"git status",
+				"Git: Status"
+			]
+		],
+		"width": 551.0
+	},
+	"console":
+	{
+		"height": 371.0,
+		"history":
+		[
+			"window.run_command('upgrade_all_package_command')",
+			"window.open_file('/home/jimmy/Seafile/dev/cabinet/sublime_project/trashblack.sublime-project')",
+			"sublime.log_commands(True)",
+			"subprocess.check_call([poem.compat.PYTHON, \"-m\", \"venv\", \"RRRRR\"], cwd=\"/home/jimmy\", startupinfo=poem.utils.startup_info())",
+			"subprocess.check_call([poem.compat.PYTHON, \"-m\", \"venv\", \"RRRRR\")], cwd=\"/home/jimmy\", startupinfo=poem.utils.startup_info())",
+			"subprocess.check_call([poem.compat.PYTHON, \"-m\", \"venv\", str(self.env)], cwd=\"/home/jimmy/riennnnnn\", startupinfo=poem.utils.startup_info())",
+			"dir(poem)",
+			"import poem.poem as poem",
+			"dir(poem)",
+			"import poem",
+			"import subprocess",
+			"v = s.Popen('python3 -m venv /tmp/tmpcx3ai1u_/aaaaaa'.split())",
+			"import subprocess as s",
+			"c.create(\"/tmp/tmpcx3ai1u_/lijlij/ccc\")",
+			"c = Ax()",
+			"from venv import EnvBuilder as Ax",
+			"c.create(\"/tmp/tmpcx3ai1u_/lijlij/ccc\")",
+			"c.create()",
+			"c = Ax()",
+			"Ax()",
+			"from venv import EnvBuilder as Ax",
+			"a.create('/tmp/tmpcx3ai1u_/lijlij')",
+			" a.create('/tmp/tmpcx3ai1u_/lijlij')",
+			"a.create('/tmp/tmpcx3ai1u_/venv')",
+			" a.create('/tmp/tmpcx3ai1u_/venv')",
+			"a =Ex()",
+			"Ex()",
+			"Ex",
+			"from poem.tests.pyenv import ExtendedEnvBuilder as Ex",
+			"from import poem.tests.pyenv import ExtendedEnvBuilder as Ex",
+			"import poem.tests",
+			"import poem.poem",
+			"import Poem.poem",
+			"import Poem",
+			"ls",
+			"l",
+			"dir()",
+			"from tests.peynv import ExtendEnvBuilder as Ex",
+			"from Poem.tests.peynv import ExtendEnvBuilder as Ex",
+			"from Poem.poem.utils import popen_out",
+			"from poem.poem.utils import popen_out",
+			"from Poem.poem.utils import popen_out",
+			"popen_out",
+			"popen",
+			"from Poem.poem.utils import *",
+			"from Poem.poem.utils import popen_out",
+			"from poem.poem.utils import popen_out",
+			"from poem.utils import popen_out",
+			"window.settings().get('python_interpreter')",
+			"window.settings.get('python_interpreter')",
+			"window.settings.Get('python_interpreter')",
+			"window.settings().set('python_interpreter', \"/fzEFZze/fzef/zef\")",
+			"window.settings().set('python_interpreter': \"/fzEFZze/fzef/zef\")",
+			"window.settings()",
+			"window.settings",
+			"sublime.active_window().active_view()",
+			"sublime.active_window().current_view()",
+			"sublime.active_window().current_viwe()",
+			"sublime.active_window()",
+			"sublime.current_window()",
+			"sublime.window()",
+			"a",
+			"a = window.active_view()",
+			"window.active_view()",
+			"a.get('python_interpreter')",
+			"a.set(\"python_interpreter\", \"/usr/bin/python3\")",
+			"a.set()",
+			"a",
+			"a = view.settings()",
+			"view.settings()",
+			"sublime.settings()",
+			"sublime.get_settings()",
+			"window.set_project_data(d)",
+			"d",
+			"d['settings']['python_interpreter'] = 'mokmokmok'",
+			"d",
+			"d.update(window.project_data())",
+			"d = defaultdict(dict)",
+			"vars(d)",
+			"d",
+			"d = defaultdict(window.project_data)",
+			"d = defaultdict(window.project_data())",
+			"d",
+			"d = defaultdict()",
+			"from collections import defaultdict",
+			"from abc.collections import DefaultDict",
+			"from collections import DefaultDict",
+			"d['settings']['python_interpreter'] = 'mokmokmok'",
+			"d",
+			"d = window.project_data()",
+			"window.project_data()",
+			"windows.project_data()",
+			"window.set_project_data({'settings':{'python_interpreter': '/zef/Fzef/'}})",
+			"window.set_project_data('settings':{'python_interpreter': '/zef/Fzef/'})",
+			"window.set_project_data()",
+			"window.project_data()",
+			"windows.project_data()",
+			"import poem",
+			"import main",
+			"os.getcwd()",
+			"import os",
+			"a.write_text('mokmokm')",
+			"a = Path('bla')",
+			"from sublack.sublack.utils import Path",
+			"dir(a)",
+			"a = Path('.')",
+			"from sublack.sublack.utils import Path",
+			"a.resolve()",
+			"dir(a)",
+			"a",
+			"a = Path('.')",
+			"from sublack.sublack.utils import Path",
+			"dir(sublack)",
+			"a = sublack.utils.Path()",
+			"import sublack",
+			"from sublack.utils import Path",
+			"from sublack.utils import PAth",
+			"hash(\"[sublack:blacker.py](DEBUG) config: {'black_exclude': None, 'black_skip_numeric_underscore_normalization': False, 'black_fast': True, 'black_default_encoding': 'utf-8', 'black_line_length': None, 'black_py36': None, 'black_include':\")",
+			"ls",
+			"view.is_dirty()",
+			"view.is_dirty",
+			"sublime.log_commands(False)",
+			"fzefzef",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"import console",
+			"console.log"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jimmy/Seafile/dev/cabinet/mdk_backup",
+		"/home/jimmy/Seafile/dev/cabinet/mdk_backup/mdk_backup"
+	],
+	"file_history":
+	[
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/sublack.sublime-settings",
+		"/home/jimmy/Seafile/dev/cabinet/sublime_project/trashblack.sublime-project",
+		"/home/jimmy/.config/sublime-text-3/Packages/poem/tests/pyenv.py",
+		"/home/jimmy/seafile/dev/cabinet/sublime_project/poem.sublime-project",
+		"/home/jimmy/seafile/dev/cabinet/poem/poem/poetry.py",
+		"/home/jimmy/seafile/dev/cabinet/poem/poem/compat.py",
+		"/home/jimmy/seafile/dev/cabinet/poem/Default.sublime-commands",
+		"/home/jimmy/seafile/dev/cabinet/poem/poem/__init__.py",
+		"/home/jimmy/seafile/dev/cabinet/poem/main.py",
+		"/home/jimmy/seafile/dev/cabinet/poem/dependencies.json",
+		"/home/jimmy/seafile/dev/cabinet/poem/Poem.sublime-settings",
+		"/home/jimmy/seafile/dev/cabinet/poem/poem/utils.py",
+		"/home/jimmy/seafile/dev/cabinet/poem/poem/commands.py",
+		"/home/jimmy/seafile/dev/cabinet/poem/tests/fake/pyproject.toml",
+		"/home/jimmy/seafile/dev/cabinet/poem/poem/consts.py",
+		"/home/jimmy/seafile/dev/cabinet/poem/sublack.sublime-settings",
+		"/home/jimmy/Documents/index.html",
+		"/home/jimmy/Seafile/dev/cabinet/poem/.gitignore",
+		"/home/jimmy/Seafile/dev/cabinet/poem/.travis.yml",
+		"/home/jimmy/Seafile/dev/cabinet/poem/appveyor.yml",
+		"/home/jimmy/Seafile/dev/cabinet/poem/dependencies.json",
+		"/home/jimmy/Seafile/dev/cabinet/poem/main.py",
+		"/home/jimmy/Seafile/dev/cabinet/poem/sublack.sublime-settings",
+		"/home/jimmy/Seafile/dev/cabinet/poem/poem/utils.py",
+		"/home/jimmy/Seafile/dev/cabinet/poem/Main.sublime-menu",
+		"/home/jimmy/Seafile/dev/cabinet/poem/messages.json",
+		"/home/jimmy/Seafile/dev/cabinet/poem/README.md",
+		"/home/jimmy/Seafile/dev/cabinet/poem/sublack.sublime-project",
+		"/home/jimmy/Seafile/dev/cabinet/poem/messages/install.txt",
+		"/home/jimmy/Seafile/dev/cabinet/poem/Default.sublime-commands",
+		"/home/jimmy/Seafile/dev/cabinet/poem/tests/fixtures.py",
+		"/home/jimmy/Seafile/dev/cabinet/poem/tests/test_rien.py",
+		"/home/jimmy/Seafile/dev/cabinet/poem/poem/__init__.py",
+		"/home/jimmy/Seafile/dev/cabinet/poem/poem/consts.py",
+		"/home/jimmy/Seafile/dev/cabinet/poem/Context.sublime-menu",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/tests/test_blackd.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/tests/test_commands.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/sublack/blacker.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/tests/fixtures.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/sublack.sublime-project",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/main.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/sublack/utils.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/tests/test_blacker.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/tests/test_utils.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/tests/test_black.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/tests/precommit",
+		"/home/jimmy/trash/black/.pre-commit-config.yamll",
+		"/home/jimmy/trash/black/.pre-commit-config.yaml",
+		"/home/jimmy/trash/black/fmtonoff.py",
+		"/home/jimmy/trash/black/tests/data/fmtonoff.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/jimmy/.local/lib/python3.6/site-packages/black.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/sublack/rien.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/sublack/tests/test_bench.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/yg.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/pyproject.toml",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/README.md",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/Makefile",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/tourrent.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/tourrent.sh",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/client.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/Pipfile",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/old/v1/lequipeur.sh",
+		"/home/jimmy/Téléchargements/L'equipe du Lundi 9 Avril 2018.pdf.torrent",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur.sublime-project",
+		"/home/jimmy/.config/sublime-text-3/Packages/User/python_imports_sorter.sublime-settings",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/tests/test_tourrent.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/tests/test_yg.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/old/dev/tourrent.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/launch.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/tourrentbot.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/tests/test_tourrentbot.py",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/tests/rien.html",
+		"/home/jimmy/Seafile/dev/cabinet/lequipeur/lequipeur/tests/conftest.py",
+		"/home/jimmy/seafile/dev/mock/test_mock.py",
+		"/home/jimmy/seafile/dev/lequipeur/lequipeur/tests/test_tourrentbot.py",
+		"/home/jimmy/seafile/dev/lequipeur/lequipeur/client.py",
+		"/home/jimmy/seafile/dev/lequipeur/lequipeur.sublime-project",
+		"/home/jimmy/seafile/dev/lequipeur/README.md",
+		"/home/jimmy/seafile/dev/lequipeur/old/v2/tourrentbot.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/Python Imports Sorter/Default.sublime-settings",
+		"/home/jimmy/Seafile/dev/lequipeur/bitbucket-pipelines.yml",
+		"/home/jimmy/Seafile/dev/lequipeur/todo",
+		"/home/jimmy/seafile/dev/lequipeur/lequipeur/tests/ygg.html",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/client.py",
+		"/home/jimmy/Seafile/dev/lequipeur/setup.py",
+		"/home/jimmy/Seafile/dev/lequipeur/tox.ini",
+		"/home/jimmy/Seafile/dev/lequipeur/.circleci/config.yml",
+		"/home/jimmy/Seafile/dev/lequipeur/requirements.txt",
+		"/home/jimmy/.env/lequipeur--IVPCM_Y/lib/python3.5/site-packages/transmissionrpc/__init__.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/tests/oooconftest.py",
+		"/home/jimmy/.env/lequipeur--IVPCM_Y/lib/python3.5/collections/__init__.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/tests/test_rien.py",
+		"/home/jimmy/Seafile/dev/lequipeur/pytest.ini",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/tests/conftest.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/tests/oootest_tourrent.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/tests/ttest_rien.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/constantes.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/tourrent.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/tests/conftest.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/tests/test_tourrent.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur.sublime-project",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/test/Yggtorrent.html",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/test/test_tourrent.py",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/test/conftest.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/Anaconda/Default (Linux).sublime-keymap",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/test_tourrent.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/jimmy/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/jimmy/Seafile/dev/lequipeur/lequipeur/v3/conftest.py",
+		"/home/jimmy/.config/sublime-text-3/Packages/User/JSON.sublime-settings"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pyproject.toml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										155,
+										156
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										150,
+										151
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										155,
+										156
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										150,
+										151
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/TOML/TOML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mdk_backup/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"SL.14.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|0238f5008d1908f1f54447509e30407afccc3b5366f0cd236fdafe7b55c986a3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|0db2108b05e8b7d15b6461c68a6a251d64830ae52643b89ba7e12f86566c0666|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.44.region_keys":
+							[
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.flake8.Highlights.|148805aaa463ae3d65523aa703b6471f3b5be026af23ac2795ac02975159375a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|15f88f3730b3630c9429afdbc4380ed29494a718b3e034e609f22a39b2f97e32|region.redish markup.error.sublime_linter|32"
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "mdk_backup/requetes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3927,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1684,
+								1684
+							]
+						],
+						"settings":
+						{
+							"SL.45.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "/home/jimmy/Seafile/dev/cabinet/mdk_backup",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 313.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "mdk_backup/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4679,
+								4679
+							]
+						],
+						"settings":
+						{
+							"SL.23.region_keys":
+							[
+								"SL.flake8.Highlights.|2ef20d50ad1e85c8cc800dd6b68c9b7fd817d7150e2059f80a2d77cb61e8f42f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3b4da3fa57e725fb930e35b609fb726c88f7f5cb2e3172975efd5ef5683d1ecf|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d226c4e788988fc55332974d6d9f2c77416093be83bb0ee649fba57bec1b45a3|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|971273c04d82092bec9b5de23e793d56e14dce6aeae8609c9a45a2cc2c727b9d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4f3b8c6579644378716cc9455860bbaa689f03a4b612271699e0686cb8f6dc4c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|cf5fa708167ad43a91d483b872a02ff09700e6eff5f9038a74016b7f2c912297|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e6e9d3f1b82f5312e0726a718ae6e60f8d3c15c32870ac8242aab5a0e72a47de|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7081dd485c39be8ee9b67b7fd1f711dfac93b3b3ff1c024518680f29ed08febe|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4245,
+										4246
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4201,
+										4202
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "/home/jimmy/Seafile/dev/cabinet/mdk_backup",
+							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2277.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 59.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 104.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 201.0
+	},
+	"output.UnitTesting":
+	{
+		"height": 258.0
+	},
+	"output.exec":
+	{
+		"height": 303.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.poetry":
+	{
+		"height": 104.0
+	},
+	"pinned_build_system": "",
+	"project": "mdk.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"util",
+				"sublack/utils.py"
+			],
+			[
+				"erver",
+				"sublack/server.py"
+			],
+			[
+				"main",
+				"main.py"
+			],
+			[
+				"test_blackd",
+				"tests/test_blackd.py"
+			],
+			[
+				"fi",
+				"tests/fixtures.py"
+			],
+			[
+				"test_com",
+				"tests/test_commands.py"
+			],
+			[
+				"testblac",
+				"tests/test_black.py"
+			],
+			[
+				"fix",
+				"tests/fixtures.py"
+			],
+			[
+				"blackd",
+				"tests/test_blackd.py"
+			],
+			[
+				"testcom",
+				"tests/test_commands.py"
+			],
+			[
+				"test_util",
+				"tests/test_utils.py"
+			],
+			[
+				"test_ut",
+				"tests/test_utils.py"
+			],
+			[
+				"black",
+				"sublack/blacker.py"
+			],
+			[
+				"utils",
+				"sublack/utils.py"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"testbla",
+				"tests/test_black.py"
+			],
+			[
+				"ser",
+				"sublack/server.py"
+			],
+			[
+				"READ",
+				"README.rst"
+			],
+			[
+				"insta",
+				"messages/install.txt"
+			],
+			[
+				"mess",
+				"messages.json"
+			],
+			[
+				"comm",
+				"sublack/commands.py"
+			],
+			[
+				"push",
+				"old/v1/lequipeur.sh"
+			],
+			[
+				"tou",
+				"tourrent.sh"
+			],
+			[
+				"pip",
+				"Pipfile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "poe",
+		"selected_items":
+		[
+			[
+				"poe",
+				"~/seafile/dev/cabinet/sublime_project/poem.sublime-project"
+			],
+			[
+				"",
+				"~/seafile/dev/cabinet/sublime_project/rhym.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

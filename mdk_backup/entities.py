@@ -21,10 +21,10 @@ class Patient(db.Entity):
     P_texte_libre = Optional(str)
     fods = Set("Fod")
     consultations = Set("Consultation")
-    antecedents = Set('Antecedent')
-    allergies = Set('Allergie')
-    certificats = Set('Certificat')
-    courriers = Set('Courrier')
+    antecedents = Set("Antecedent")
+    allergies = Set("Allergie")
+    certificats = Set("Certificat")
+    courriers = Set("Courrier")
 
     def __repr__(self):
         return " ".join((self.P_pnom, self.P_pprenom))
@@ -60,19 +60,41 @@ class Consultation(db.Entity):
 class Ligne(db.Entity):
     _table_ = "s_lignordo"
     ligne_ordo_id = PrimaryKey(int, column="Lo_id")
+    Lo_poso = Optional(str)
+    Lo_autoposo = Optional(str)
     Lo_duree = Optional(str)
-    Lo_mat = Optional(Decimal)
-    Lo_10h = Optional(Decimal)
-    Lo_midi = Optional(Decimal)
-    Lo_16h = Optional(Decimal)
-    Lo_soir = Optional(Decimal)
-    Lo_cou = Optional(Decimal)
-    Lo_repas = Optional(str)
+    # Lo_mat = Optional(Decimal)
+    # Lo_10h = Optional(Decimal)
+    # Lo_midi = Optional(Decimal)
+    # Lo_16h = Optional(Decimal)
+    # Lo_soir = Optional(Decimal)
+    # Lo_cou = Optional(Decimal)
+    # Lo_repas = Optional(str)
     Lo_FK_Cons_id = Optional(Consultation)
     Lo_FK_Vidal_id = Optional("Vidal")
 
+    UNITE = {0:"boites", 1: "jours", 2: "semaines", 3: "mois", 4: "année"}
+
+    @property
+    def duree(self):
+        try:
+            nb,unite = self.Lo_duree.split('|')
+        except ValueError:
+            return ""
+        return nb + " " + self.UNITE[int(unite)]
+
     def __repr__(self):
-        return repr(self.Lo_FK_Vidal_id)
+        return repr(
+            str(self.ligne_ordo_id)
+            + ": "
+            + repr(self.Lo_FK_Vidal_id)
+            + "->"
+            + self.Lo_autoposo
+            + " "
+            + self.Lo_poso
+            + " "
+            +self.duree
+        )
 
 
 class Vidal(db.Entity):
@@ -85,27 +107,29 @@ class Vidal(db.Entity):
     def __repr__(self):
         return self.Vidal_nommed
 
+
 class Antecedent(db.Entity):
     _table_ = "s_antecedent"
     antecedent_id = PrimaryKey(int, column="Ant_id")
     Ant_date = Optional(date)
     Ant_texte = Optional(str)
     Ant_resume = Optional(str)
-    Ant_fam =  Optional(int)
-    Ant_FK_P_pnum_id = Optional('Patient')
+    Ant_fam = Optional(int)
+    Ant_FK_P_pnum_id = Optional("Patient")
 
     def __repr__(self):
-        return self.Ant_texte + ' ' + self.Ant_resume
+        return self.Ant_texte + " " + self.Ant_resume
+
 
 class Allergie(db.Entity):
     _table_ = "s_f_allergies_pat"
     antecedent_id = PrimaryKey(int, column="Fap_id")
     Fap_Allergie_Nom = Optional(str)
     Fap_Allergie_Comment = Optional(str)
-    Fap_P_pnum_id = Optional('Patient')
+    Fap_P_pnum_id = Optional("Patient")
 
     def __repr__(self):
-        return self.Fap_Allergie_Nom + ': ' + self.Fap_Allergie_Comment
+        return self.Fap_Allergie_Nom + ": " + self.Fap_Allergie_Comment
 
 
 class Certificat(db.Entity):
@@ -114,10 +138,11 @@ class Certificat(db.Entity):
     Certif_date = Optional(date)
     Certif_titre = Optional(str)
     Certif_phrase = Optional(str)
-    Certif_FK_P_pnum_id = Optional('Patient')
+    Certif_FK_P_pnum_id = Optional("Patient")
 
     def __repr__(self):
         return self.Certif_titre
+
 
 class Courrier(db.Entity):
     _table_ = "s_courrier"
@@ -126,20 +151,19 @@ class Courrier(db.Entity):
     C_adressage = Optional(str)
     C_entete = Optional(str)
     C_write = Optional(str)
-    C_FK_P_pnum_id = Optional('Patient')
+    C_FK_P_pnum_id = Optional("Patient")
 
 
 db.bind("mysql", host="localhost", user="j", passwd="j", db="basemdk", port=3306)
 db.generate_mapping(create_tables=False)
 
 
-@db_session
-def patient():
-    p = Patient[1367]
+def patient(id):
+    p = Patient[id]
     print(p.to_dict(related_objects=True, with_collections=True))
+    return p
 
 
-@db_session
 def fod():
     fods = select(
         (
@@ -154,20 +178,38 @@ def fod():
     print(list(fods[650:900]))
 
 
-@db_session
-def consultation():
+def consultation(id=None):
+    if id:
+        return Consultation[id].to_dict(related_objects=True, with_collections=True)
+
     cons = select(a for a in Consultation if a.Cons_cdate > date(2018, 11, 25))
     print([a.to_dict(related_objects=True, with_collections=True) for a in cons])
 
 
-@db_session
-def ligne():
+def ligne(id=None):
+    if id:
+        return Ligne[id].to_dict(related_objects=True, with_collections=True)
+
     lignes = select(a for a in Ligne if a.Lo_FK_Cons_id.Cons_cdate > date(2018, 11, 28))
     print([a.to_dict(related_objects=True) for a in lignes])
 
 
-if __name__ == "__main__":
-    patient()
+@db_session
+def main():
+    p = patient(id=1367)
+    (list(print(f.to_dict()) for f in p.fods))
     # fod()
-    # consultation()
-    # ligne()
+    # print(consultation(146280))
+    # print(ligne(317741))
+    # print(consultation(169672))
+    # print(ligne(331011))
+    # print(consultation(171004))
+    # print(ligne(334408))
+    # print(consultation(191750))
+    # print(ligne(387539))
+    # print(consultation(188947))
+    # print(ligne(380639))
+
+
+if __name__ == "__main__":
+    main()

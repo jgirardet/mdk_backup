@@ -1,0 +1,22 @@
+{
+	"build_systems": 
+	[
+	{
+	"name": "current python_interpreter",
+    "cmd": ["/home/jimmy/Seafile/dev/cabinet/mdk_backup/.venv/bin/python", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+					
+	}],
+
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"python_interpreter": "/home/jimmy/Seafile/dev/cabinet/mdk_backup/.venv/bin/python"
+	}
+}
