@@ -36,3 +36,10 @@ FROM basemdk.s_certificat;
 
 SELECT C_id, C_entete, C_write, C_texte2, C_my_dear, C_date, C_nomad, Cpc_heure, C_textedit, C_auto, C_important, C_a_corriger, C_chemin, C_type, C_adressage, C_FK_E_num_med_id, C_numrpc, C_screen, C_report, C_nbre_copie, C_is_mail, C_date_mail, C_FK_Cons_id, C_FK_P_pnum_id, C_FK_Spe_snes_id, OLDKEY_S_Courrier, C_secretaire, C_Titre
 FROM basemdk.s_courrier;
+
+
+SELECT Ep_dat, Ep_texte, Ep_id, Ep_prev, Ep_maj, Ep_ole, Ep_nomad, Ep_periode, Ep_an, Ep_resume, Ep_tot_doc, Ep_FK_Ex_id, Ep_FK_Cons_id, Ep_FK_P_pnum_id, Ep_FK_Spe_snes_id, Ep_liste_orl_txt, Ep_FK_E_num_med_id, OLDKEY_S_L_EXComplementR, Ep_remplacant, Ep_secretaire
+FROM basemdk.s_l_excomplementr;
+
+SELECT X_id, X_ddate_prescript, X_ddate_resultats, X_ald, X_boite_olettre, X_ide, X_comment, X_maj, X_rmo, X_nom_labo, X_num_dossier, X_xxx, X_num_med, X_titre_examen, X_tot_doc, X_FK_Cons_id, X_FK_P_pnum_id, X_FK_E_num_med_id, OLDKEY_S_Exam_Demandes, X_remplacant, X_secretaire
+FROM basemdk.s_exam_demandes;

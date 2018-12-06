@@ -25,6 +25,13 @@ class Patient(db.Entity):
     allergies = Set("Allergie")
     certificats = Set("Certificat")
     courriers = Set("Courrier")
+    _examens = Set("Examen")
+    bios = Set("Bio")
+
+
+    @property
+    def examens(self):
+        return self._examens.select(lambda e: e.Ep_texte or e.Ep_resume)
 
     def __repr__(self):
         return " ".join((self.P_pnom, self.P_pprenom))
@@ -46,6 +53,9 @@ class Consultation(db.Entity):
     consultation_id = PrimaryKey(int, column="Cons_id")
 
     Cons_cdate = Optional(date)
+    Cons_ctascg = Optional(int)
+    Cons_ctadcg = Optional(int)
+    Cons_cfc = Optional(int)
     Cons_cmotifprincip = Optional(str)
     Cons_csympto = Optional(str)
     Cons_cexamen = Optional(str)
@@ -73,12 +83,12 @@ class Ligne(db.Entity):
     Lo_FK_Cons_id = Optional(Consultation)
     Lo_FK_Vidal_id = Optional("Vidal")
 
-    UNITE = {0:"boites", 1: "jours", 2: "semaines", 3: "mois", 4: "année"}
+    UNITE = {0: "boites", 1: "jours", 2: "semaines", 3: "mois", 4: "année"}
 
     @property
     def duree(self):
         try:
-            nb,unite = self.Lo_duree.split('|')
+            nb, unite = self.Lo_duree.split("|")
         except ValueError:
             return ""
         return nb + " " + self.UNITE[int(unite)]
@@ -93,7 +103,7 @@ class Ligne(db.Entity):
             + " "
             + self.Lo_poso
             + " "
-            +self.duree
+            + self.duree
         )
 
 
@@ -154,6 +164,23 @@ class Courrier(db.Entity):
     C_FK_P_pnum_id = Optional("Patient")
 
 
+class Examen(db.Entity):
+    _table_ = "s_l_excomplementr"
+    examen_id = PrimaryKey(int, column="Ep_id")
+    Ep_dat = Optional(date)
+    Ep_texte = Optional(str)
+    Ep_resume = Optional(str)
+    Ep_FK_P_pnum_id = Optional("Patient")
+
+
+class Bio(db.Entity):
+    _table_ = "s_exam_demandes"
+    bio_id = PrimaryKey(int, column="X_id")
+    X_ddate_resultats = Optional(date)
+    X_boite_olettre = Optional(str)
+    X_FK_P_pnum_id = Optional("Patient")
+
+
 db.bind("mysql", host="localhost", user="j", passwd="j", db="basemdk", port=3306)
 db.generate_mapping(create_tables=False)
 
@@ -197,7 +224,7 @@ def ligne(id=None):
 @db_session
 def main():
     p = patient(id=1367)
-    (list(print(f.to_dict()) for f in p.fods))
+    (list(print(f.to_dict()) for f in p.bios))
     # fod()
     # print(consultation(146280))
     # print(ligne(317741))
