@@ -8,6 +8,7 @@ authors = ["Jimmy Girardet <ijkl@netc.fr>"]
 python = "^3.7"
 pony = "^0.7.6"
 pymysql = "^0.9.2"
+pypdf2 = "^1.26"
 
 [tool.poetry.dev-dependencies]
 bpython = "^0.17.1"

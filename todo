@@ -1,4 +1,31 @@
+fix:
+titre examen
 
+
+
+worflow
+
+- on récupère un patient id (seulement les vivants)
+- format : 
+ - patient
+ - antécédants
+ - allergies
+ - consultations:
+     - obs
+     - ordonnance : ligne
+ - certifs
+ - courriers
+ - bios
+ - examens
+
+- creation d'un pdf commun sauf fods
+
+- fods : 
+ 	- get les ids
+ 	- get les path
+ 	- command de fusion
+
+- fusionne le gros et enregistre
 
 
 

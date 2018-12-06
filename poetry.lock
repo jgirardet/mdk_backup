@@ -122,6 +122,14 @@ version = "0.9.2"
 cryptography = "*"
 
 [[package]]
+category = "main"
+description = "PDF toolkit"
+name = "pypdf2"
+optional = false
+python-versions = "*"
+version = "1.26.0"
+
+[[package]]
 category = "dev"
 description = "Python HTTP for Humans."
 name = "requests"
@@ -154,7 +162,7 @@ python-versions = "*"
 version = "0.1.7"
 
 [metadata]
-content-hash = "971498dd0eef44bc0c74c5691b948d65e5cf763f337d7e8c95e913ffafe077a7"
+content-hash = "fcb3097d88e97135dd70eb2bbc5f027f8d100a80925865c0b25da1b0bcd7b46a"
 python-versions = "^3.7"
 
 [metadata.hashes]
@@ -170,6 +178,7 @@ pony = ["0d72f4ab9d50d42f275606c0c2812aa704bf3a37ac8f2a60c9892eff3f90d615", "b18
 pycparser = ["a988718abfad80b6b157acce7bf130a30876d27603738ac39f140993246b25b3"]
 pygments = ["6301ecb0997a52d2d31385e62d0a4a4cf18d2f2da7054a5ddad5c366cd39cee7", "82666aac15622bd7bb685a4ee7f6625dd716da3ef7473620c192c0168aae64fc"]
 pymysql = ["95f057328357e0e13a30e67857a8c694878b0175797a9a203ee7adbfb9b1ec5f", "9ec760cbb251c158c19d6c88c17ca00a8632bac713890e465b2be01fdc30713f"]
+pypdf2 = ["e28f902f2f0a1603ea95ebe21dff311ef09be3d0f0ef29a3e44a932729564385"]
 requests = ["e5659b9315a0610505e050bb7190bf6fa2ccee1ac295f2b760ef9d8a03ebbb2e", "ff753b2196cd18b1bbeddc9dcd5c864056599f7a7d9a4fb5677e723efa2b7fb9"]
 six = ["70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9", "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"]
 typing = ["4027c5f6127a6267a435201981ba156de91ad0d1d98e9ddc2aa173453453492d", "57dcf675a99b74d64dacf6fba08fb17cf7e3d5fdff53d4a30ea2a5e7e52543d4", "a4c8473ce11a65999c8f59cb093e70686b6c84c98df58c1dae9b3b196089858a"]

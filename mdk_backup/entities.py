@@ -1,4 +1,4 @@
-from pony.orm import Database, Optional, db_session, PrimaryKey, Set, select
+from pony.orm import Database, Optional, db_session, PrimaryKey, Set, select, desc
 from datetime import datetime, date, timedelta
 from decimal import Decimal
 
@@ -28,7 +28,6 @@ class Patient(db.Entity):
     _examens = Set("Examen")
     bios = Set("Bio")
 
-
     @property
     def examens(self):
         return self._examens.select(lambda e: e.Ep_texte or e.Ep_resume)
@@ -36,6 +35,20 @@ class Patient(db.Entity):
     def __repr__(self):
         return " ".join((self.P_pnom, self.P_pprenom))
 
+    def content(self):
+        return f"""
+{self.P_pnom} {self.P_pprenom} {self.P_pddn} {self.P_adr1} {self.P_adr2} {self.P_codp} {self.P_ville} {self.P_ptel} {self.P_tel2} {self.P_tel3}     
+antécédents:  {" / ".join(a.content() for a in self.antecedents)}
+allergies:  {" / ".join(a.content() for a in self.allergies)}
+
+{"".join(c.content() for c in self.consultations.order_by(desc(Consultation.Cons_cdate)))}
+
+{"".join(a.content() for a in self.certificats.order_by(desc(Certificat.Certif_date)))}
+
+{"".join(a.content() for a in self.courriers.order_by(desc(Courrier.C_date)))}
+
+{"".join(a.content() for a in self.examens.order_by(desc(Examen.Ep_dat)))}
+"""
 
 class Fod(db.Entity):
     _table_ = "s_f_others_docs"
@@ -65,6 +78,13 @@ class Consultation(db.Entity):
     Cons_ctaille = Optional(int)
     Cons_FK_P_pnum_id = Optional(Patient)
     lignes = Set("Ligne")
+
+    def content(self):
+        lignes = " | ".join([ligne.content() for ligne in self.lignes])
+        return f"""{self.Cons_cdate}  {self.Cons_ctascg}/{self.Cons_ctadcg}mmHg {self.Cons_cfc}bpm {self.Cons_ctaille}m {self.Cons_ckilos}kg
+{self.Cons_cmotifprincip}: {self.Cons_csympto}. {self.Cons_cexamen}. {self.Cons_causccard}. {self.Cons_cconclu}
+{lignes}
+"""
 
 
 class Ligne(db.Entity):
@@ -106,6 +126,11 @@ class Ligne(db.Entity):
             + self.duree
         )
 
+    def content(self):
+        return (
+            f"{self.Lo_FK_Vidal_id}"
+        )  #: {self.Lo_autoposo} {self.Lo_poso} {self.duree}"
+
 
 class Vidal(db.Entity):
     _table_ = "s_vidal"
@@ -130,6 +155,8 @@ class Antecedent(db.Entity):
     def __repr__(self):
         return self.Ant_texte + " " + self.Ant_resume
 
+    def content(self):
+        return f"""{self.Ant_texte}: {self.Ant_resume} ({self.Ant_date.strftime('%Y') if self.Ant_date else ""}) {"fam" if self.Ant_fam else ""}"""
 
 class Allergie(db.Entity):
     _table_ = "s_f_allergies_pat"
@@ -139,6 +166,10 @@ class Allergie(db.Entity):
     Fap_P_pnum_id = Optional("Patient")
 
     def __repr__(self):
+        return self.Fap_Allergie_Nom + ": " + self.Fap_Allergie_Comment
+
+
+    def content(self):
         return self.Fap_Allergie_Nom + ": " + self.Fap_Allergie_Comment
 
 
@@ -153,6 +184,9 @@ class Certificat(db.Entity):
     def __repr__(self):
         return self.Certif_titre
 
+    def content(self):
+        return f"""{self.Certif_date.strftime('%d %m %Y')} {self.Certif_titre}:{self.Certif_phrase}
+"""
 
 class Courrier(db.Entity):
     _table_ = "s_courrier"
@@ -164,6 +198,10 @@ class Courrier(db.Entity):
     C_FK_P_pnum_id = Optional("Patient")
 
 
+    def content(self):
+        return f"""{self.C_date.strftime('%d %m %Y')} {self.C_entete} {self.C_adressage} {self.C_write}
+"""
+
 class Examen(db.Entity):
     _table_ = "s_l_excomplementr"
     examen_id = PrimaryKey(int, column="Ep_id")
@@ -171,6 +209,10 @@ class Examen(db.Entity):
     Ep_texte = Optional(str)
     Ep_resume = Optional(str)
     Ep_FK_P_pnum_id = Optional("Patient")
+
+    def content(self):
+            return f"""{self.Ep_dat.strftime('%d %m %Y')} {self.Ep_texte} {self.Ep_resume}
+"""
 
 
 class Bio(db.Entity):
@@ -187,7 +229,7 @@ db.generate_mapping(create_tables=False)
 
 def patient(id):
     p = Patient[id]
-    print(p.to_dict(related_objects=True, with_collections=True))
+    # print(p.to_dict(related_objects=True, with_collections=True))
     return p
 
 
@@ -207,7 +249,7 @@ def fod():
 
 def consultation(id=None):
     if id:
-        return Consultation[id].to_dict(related_objects=True, with_collections=True)
+        return Consultation[id].content()
 
     cons = select(a for a in Consultation if a.Cons_cdate > date(2018, 11, 25))
     print([a.to_dict(related_objects=True, with_collections=True) for a in cons])
@@ -223,8 +265,8 @@ def ligne(id=None):
 
 @db_session
 def main():
-    p = patient(id=1367)
-    (list(print(f.to_dict()) for f in p.bios))
+    print(Patient[1367].content())
+    # (list(print(f.to_dict()) for f in p.bios))
     # fod()
     # print(consultation(146280))
     # print(ligne(317741))
