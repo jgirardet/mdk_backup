@@ -1,4 +1,4 @@
-from pony.orm import Database, Optional, db_session, PrimaryKey, Set, select, desc
+from pony.orm import Database, Optional, db_session, PrimaryKey, Set, select, desc, UnrepeatableReadError
 from datetime import datetime, date, timedelta
 from decimal import Decimal
 
@@ -41,13 +41,29 @@ class Patient(db.Entity):
 antécédents:  {" / ".join(a.content() for a in self.antecedents)}
 allergies:  {" / ".join(a.content() for a in self.allergies)}
 
+######################################################################
+
 {"".join(c.content() for c in self.consultations.order_by(desc(Consultation.Cons_cdate)))}
+
+######################################################################
+
 
 {"".join(a.content() for a in self.certificats.order_by(desc(Certificat.Certif_date)))}
 
+######################################################################
+
 {"".join(a.content() for a in self.courriers.order_by(desc(Courrier.C_date)))}
 
+######################################################################
+
 {"".join(a.content() for a in self.examens.order_by(desc(Examen.Ep_dat)))}
+
+######################################################################
+
+{"".join(a.content() for a in self.bios.order_by(desc(Bio.X_ddate_resultats)))}
+
+######################################################################
+
 """
 
 class Fod(db.Entity):
@@ -84,6 +100,7 @@ class Consultation(db.Entity):
         return f"""{self.Cons_cdate}  {self.Cons_ctascg}/{self.Cons_ctadcg}mmHg {self.Cons_cfc}bpm {self.Cons_ctaille}m {self.Cons_ckilos}kg
 {self.Cons_cmotifprincip}: {self.Cons_csympto}. {self.Cons_cexamen}. {self.Cons_causccard}. {self.Cons_cconclu}
 {lignes}
+--------------------------------------------------------
 """
 
 
@@ -93,13 +110,6 @@ class Ligne(db.Entity):
     Lo_poso = Optional(str)
     Lo_autoposo = Optional(str)
     Lo_duree = Optional(str)
-    # Lo_mat = Optional(Decimal)
-    # Lo_10h = Optional(Decimal)
-    # Lo_midi = Optional(Decimal)
-    # Lo_16h = Optional(Decimal)
-    # Lo_soir = Optional(Decimal)
-    # Lo_cou = Optional(Decimal)
-    # Lo_repas = Optional(str)
     Lo_FK_Cons_id = Optional(Consultation)
     Lo_FK_Vidal_id = Optional("Vidal")
 
@@ -156,7 +166,7 @@ class Antecedent(db.Entity):
         return self.Ant_texte + " " + self.Ant_resume
 
     def content(self):
-        return f"""{self.Ant_texte}: {self.Ant_resume} ({self.Ant_date.strftime('%Y') if self.Ant_date else ""}) {"fam" if self.Ant_fam else ""}"""
+        return f"""{self.Ant_texte.strip()}: {self.Ant_resume.strip()} ({self.Ant_date.strftime('%Y') if self.Ant_date else ""}) {"fam" if self.Ant_fam else ""}"""
 
 class Allergie(db.Entity):
     _table_ = "s_f_allergies_pat"
@@ -170,7 +180,7 @@ class Allergie(db.Entity):
 
 
     def content(self):
-        return self.Fap_Allergie_Nom + ": " + self.Fap_Allergie_Comment
+        return self.Fap_Allergie_Nom.strip() + ": " + self.Fap_Allergie_Comment.strip()
 
 
 class Certificat(db.Entity):
@@ -185,7 +195,8 @@ class Certificat(db.Entity):
         return self.Certif_titre
 
     def content(self):
-        return f"""{self.Certif_date.strftime('%d %m %Y')} {self.Certif_titre}:{self.Certif_phrase}
+        return f"""{self.Certif_date.strftime('%d %m %Y')} {self.Certif_titre.strip()}:{self.Certif_phrase.strip()}
+--------------------------------------------------------
 """
 
 class Courrier(db.Entity):
@@ -199,7 +210,8 @@ class Courrier(db.Entity):
 
 
     def content(self):
-        return f"""{self.C_date.strftime('%d %m %Y')} {self.C_entete} {self.C_adressage} {self.C_write}
+        return f"""{self.C_date.strftime('%d %m %Y')} {self.C_entete} {self.C_adressage.strip()} {self.C_write.strip()}
+--------------------------------------------------------
 """
 
 class Examen(db.Entity):
@@ -209,11 +221,26 @@ class Examen(db.Entity):
     Ep_texte = Optional(str)
     Ep_resume = Optional(str)
     Ep_FK_P_pnum_id = Optional("Patient")
+    Ep_FK_Ex_id = Optional('ExamenNom')
 
     def content(self):
-            return f"""{self.Ep_dat.strftime('%d %m %Y')} {self.Ep_texte} {self.Ep_resume}
+        try:
+            nom = self.Ep_FK_Ex_id.content()
+        except UnrepeatableReadError:
+            nom=""
+        # date = self.Ep_dat.strftime('%d %m %Y') if  self.Ep_dat else ''
+        return f"""{self.Ep_dat.strftime('%d %m %Y') if  self.Ep_dat else ''} {nom.strip()}  {self.Ep_texte.strip()} {self.Ep_resume.strip()}
+--------------------------------------------------------
 """
 
+class ExamenNom(db.Entity):
+    _table_ ="s_ex_complementr"
+    examen_nom_id = PrimaryKey(int, column="Ex_id")
+    Ex_nom = Optional(str)
+    examen = Set(Examen)
+
+    def content(self):
+        return f"{self.Ex_nom}"
 
 class Bio(db.Entity):
     _table_ = "s_exam_demandes"
@@ -222,6 +249,10 @@ class Bio(db.Entity):
     X_boite_olettre = Optional(str)
     X_FK_P_pnum_id = Optional("Patient")
 
+    def content(self):
+            return f"""{self.X_ddate_resultats.strftime('%d %m %Y') if self.X_ddate_resultats else ''} {self.X_boite_olettre.strip()}
+-------------------------------------------------------- 
+"""
 
 db.bind("mysql", host="localhost", user="j", passwd="j", db="basemdk", port=3306)
 db.generate_mapping(create_tables=False)
@@ -265,7 +296,12 @@ def ligne(id=None):
 
 @db_session
 def main():
-    print(Patient[1367].content())
+    # print(Patient[1367].content())
+    print(Patient[490].content())
+    with open('rien.txt', 'wt') as file:
+        file.write(Patient[490].content())
+    with open('rien2.txt', 'wt') as file:
+        file.write(Patient[1367].content())
     # (list(print(f.to_dict()) for f in p.bios))
     # fod()
     # print(consultation(146280))

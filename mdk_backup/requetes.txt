@@ -41,5 +41,10 @@ FROM basemdk.s_courrier;
 SELECT Ep_dat, Ep_texte, Ep_id, Ep_prev, Ep_maj, Ep_ole, Ep_nomad, Ep_periode, Ep_an, Ep_resume, Ep_tot_doc, Ep_FK_Ex_id, Ep_FK_Cons_id, Ep_FK_P_pnum_id, Ep_FK_Spe_snes_id, Ep_liste_orl_txt, Ep_FK_E_num_med_id, OLDKEY_S_L_EXComplementR, Ep_remplacant, Ep_secretaire
 FROM basemdk.s_l_excomplementr;
 
+
+SELECT Ex_nom, Ex_id, Ex_p_sex, Ex_p_when, Ex_p_age_deb, Ex_p_persofam, Ex_p_prog, Ex_p_toules, Ex_p_attache, Ex_p_at_patho, Ex_p_reprog, Ex_prev_info, Ex_p_age_fin, Ex_p_exclu, Ex_p_ex_patho, Ex_type, Ex_FK_Cat_id, OLDKEY_S_EX_COMPLEMENTR, Ex_Type_Datamart, Ex_classe_atc
+FROM basemdk.s_ex_complementr;
+
+
 SELECT X_id, X_ddate_prescript, X_ddate_resultats, X_ald, X_boite_olettre, X_ide, X_comment, X_maj, X_rmo, X_nom_labo, X_num_dossier, X_xxx, X_num_med, X_titre_examen, X_tot_doc, X_FK_Cons_id, X_FK_P_pnum_id, X_FK_E_num_med_id, OLDKEY_S_Exam_Demandes, X_remplacant, X_secretaire
 FROM basemdk.s_exam_demandes;
