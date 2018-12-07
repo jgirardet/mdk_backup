@@ -1,6 +1,11 @@
 
 worflow
 
+
+1/ Formatage commun
+2/ creation du du pdf commun
+
+
 - on récupère un patient id (seulement les vivants)
 - format : 
  - patient
@@ -22,6 +27,9 @@ worflow
  	- command de fusion
 
 - fusionne le gros et enregistre
+
+
+
 
 
 

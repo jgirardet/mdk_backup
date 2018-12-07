@@ -37,33 +37,49 @@ class Patient(db.Entity):
 
     def content(self):
         return f"""
-{self.P_pnom} {self.P_pprenom} {self.P_pddn} {self.P_adr1} {self.P_adr2} {self.P_codp} {self.P_ville} {self.P_ptel} {self.P_tel2} {self.P_tel3}     
-antécédents:  {" / ".join(a.content() for a in self.antecedents)}
-allergies:  {" / ".join(a.content() for a in self.allergies)}
 
-######################################################################
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="html.css">
+</head>
+<body>
+<h1>
+{self.P_pnom} {self.P_pprenom} ({self.P_pddn.strftime("%d %m %Y")})
+</h1>
+<p> {self.P_adr1} {self.P_adr2} {self.P_codp} {self.P_ville} {self.P_ptel} {self.P_tel2} {self.P_tel3}<p>
 
+<h2>Antécédents</h2>
+<p> {" / ".join(a.content() for a in self.antecedents)}</p>
+<h2>Allergies:  {" / ".join(a.content() for a in self.allergies)}</h2>
+
+<hr>
+<hr>
+
+<h2>Consultations</h2>
 {"".join(c.content() for c in self.consultations.order_by(desc(Consultation.Cons_cdate)))}
 
-######################################################################
-
-
+<hr><hr>
+<h2>Certificats</h2>
 {"".join(a.content() for a in self.certificats.order_by(desc(Certificat.Certif_date)))}
 
-######################################################################
-
+<hr><hr>
+<h2>Courriers Redigés</h2>
 {"".join(a.content() for a in self.courriers.order_by(desc(Courrier.C_date)))}
 
-######################################################################
+<hr><hr>
+<h2>Examens/Prevention</h2>
 
 {"".join(a.content() for a in self.examens.order_by(desc(Examen.Ep_dat)))}
 
-######################################################################
-
+<hr><hr>
+<h2>Biologies</h2>
 {"".join(a.content() for a in self.bios.order_by(desc(Bio.X_ddate_resultats)))}
 
-######################################################################
+<hr><hr>
 
+</body>
+</html
 """
 
 class Fod(db.Entity):
@@ -97,11 +113,11 @@ class Consultation(db.Entity):
 
     def content(self):
         lignes = " | ".join([ligne.content() for ligne in self.lignes])
-        return f"""{self.Cons_cdate}  {self.Cons_ctascg}/{self.Cons_ctadcg}mmHg {self.Cons_cfc}bpm {self.Cons_ctaille}m {self.Cons_ckilos}kg
-{self.Cons_cmotifprincip}: {self.Cons_csympto}. {self.Cons_cexamen}. {self.Cons_causccard}. {self.Cons_cconclu}
+        return f"""<p><strong>{self.Cons_cdate}</strong>  {self.Cons_ctascg}/{self.Cons_ctadcg}mmHg {self.Cons_cfc}bpm {self.Cons_ctaille}m {self.Cons_ckilos}kg
+        </br>{self.Cons_cmotifprincip}: {self.Cons_csympto}. {self.Cons_cexamen}. {self.Cons_causccard}. {self.Cons_cconclu}
+        </br>
 {lignes}
---------------------------------------------------------
-"""
+<p>"""
 
 
 class Ligne(db.Entity):
@@ -195,9 +211,8 @@ class Certificat(db.Entity):
         return self.Certif_titre
 
     def content(self):
-        return f"""{self.Certif_date.strftime('%d %m %Y')} {self.Certif_titre.strip()}:{self.Certif_phrase.strip()}
---------------------------------------------------------
-"""
+        return f"""<p><strong>{self.Certif_date.strftime('%d %m %Y')}</strong> {self.Certif_titre.strip()}
+         </br>{self.Certif_phrase.strip()}</p>"""
 
 class Courrier(db.Entity):
     _table_ = "s_courrier"
@@ -210,9 +225,8 @@ class Courrier(db.Entity):
 
 
     def content(self):
-        return f"""{self.C_date.strftime('%d %m %Y')} {self.C_entete} {self.C_adressage.strip()} {self.C_write.strip()}
---------------------------------------------------------
-"""
+        return f"""<p><strong>{self.C_date.strftime('%d %m %Y')}</strong> 
+        </br> {self.C_entete} {self.C_adressage.strip()} {self.C_write.strip()}</br>"""
 
 class Examen(db.Entity):
     _table_ = "s_l_excomplementr"
@@ -229,9 +243,8 @@ class Examen(db.Entity):
         except UnrepeatableReadError:
             nom=""
         # date = self.Ep_dat.strftime('%d %m %Y') if  self.Ep_dat else ''
-        return f"""{self.Ep_dat.strftime('%d %m %Y') if  self.Ep_dat else ''} {nom.strip()}  {self.Ep_texte.strip()} {self.Ep_resume.strip()}
---------------------------------------------------------
-"""
+        return f"""<p><strong>{self.Ep_dat.strftime('%d %m %Y') if  self.Ep_dat else ''}</strong>  {nom.strip()} 
+        </br> {self.Ep_texte.strip()} {self.Ep_resume.strip()}</p>"""
 
 class ExamenNom(db.Entity):
     _table_ ="s_ex_complementr"
@@ -250,9 +263,7 @@ class Bio(db.Entity):
     X_FK_P_pnum_id = Optional("Patient")
 
     def content(self):
-            return f"""{self.X_ddate_resultats.strftime('%d %m %Y') if self.X_ddate_resultats else ''} {self.X_boite_olettre.strip()}
--------------------------------------------------------- 
-"""
+            return f"""<p><strong>{self.X_ddate_resultats.strftime('%d %m %Y') if self.X_ddate_resultats else ''}</strong> {self.X_boite_olettre.strip()}</p>"""
 
 db.bind("mysql", host="localhost", user="j", passwd="j", db="basemdk", port=3306)
 db.generate_mapping(create_tables=False)
@@ -297,7 +308,7 @@ def ligne(id=None):
 @db_session
 def main():
     # print(Patient[1367].content())
-    print(Patient[490].content())
+    print(Patient[681].content())
     with open('rien.txt', 'wt') as file:
         file.write(Patient[490].content())
     with open('rien2.txt', 'wt') as file:

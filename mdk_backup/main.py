@@ -1,6 +1,8 @@
 from PyPDF2 import PdfFileMerger, PdfFileReader
-import os
-from pathlib import Path
+from entities import Patient
+from pony.orm import db_session
+import pydf
+
 
 class FodMerge:
     def __init__(self, patient):
@@ -16,11 +18,15 @@ def merge(paths):
     merger.write("output.pdf")
 
 
-    # def write_pdf(merger):
-
-
+@db_session
+def gen_py():
+    texte = Patient[1367].content()
+    pdf = pydf.generate_pdf(texte)
+    with open('test_doc.pdf', 'wb') as f:
+        f.write(pdf)
 
 if __name__ == '__main__':
-    p = Path('../fixtures')
-    files = [p / ".".join((str(n), 'pdf')) for n in range(1,4)]
-    merge(files)
+    # p = Path('../fixtures')
+    # files = [p / ".".join((str(n), 'pdf')) for n in range(1,4)]
+    # merge(files)
+    gen_py()
