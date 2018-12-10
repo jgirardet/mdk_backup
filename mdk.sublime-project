@@ -1,14 +1,18 @@
 {
-	"build_systems": 
+	"build_systems":
 	[
-	{
-	"name": "current python_interpreter",
-    "cmd": ["$folder/.venv/bin/python", "-u", "$file"],
-    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-    "selector": "source.python"
-					
-	}],
-
+		{
+			"cmd":
+			[
+				"$folder/.venv/bin/python",
+				"-u",
+				"$file"
+			],
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "current python_interpreter",
+			"selector": "source.python"
+		}
+	],
 	"folders":
 	[
 		{
@@ -17,6 +21,6 @@
 	],
 	"settings":
 	{
-		"python_interpreter": "$folder/.venv/bin/python"
+		"python_interpreter": "/home/jimmy/Seafile/dev/cabinet/mdk_backup/.venv/bin/python"
 	}
 }

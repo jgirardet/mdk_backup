@@ -45,7 +45,7 @@ class Patient(db.Entity):
 </head>
 <body>
 <h1>
-{self.P_pnom} {self.P_pprenom} ({self.P_pddn.strftime("%d %m %Y")})
+{self.P_pnom} {self.P_pprenom} ({self.P_pddn.strftime("%d %m %Y") if self.P_pddn else ""})
 </h1>
 <p> {self.P_adr1} {self.P_adr2} {self.P_codp} {self.P_ville} {self.P_ptel} {self.P_tel2} {self.P_tel3}<p>
 
@@ -211,7 +211,7 @@ class Certificat(db.Entity):
         return self.Certif_titre
 
     def content(self):
-        return f"""<p><strong>{self.Certif_date.strftime('%d %m %Y')}</strong> {self.Certif_titre.strip()}
+        return f"""<p><strong>{self.Certif_date.strftime('%d %m %Y') if  self.Certif_date else ''}</strong> {self.Certif_titre.strip()}
          </br>{self.Certif_phrase.strip()}</p>"""
 
 class Courrier(db.Entity):
@@ -267,7 +267,7 @@ class Bio(db.Entity):
 
 db.bind("mysql", host="localhost", user="j", passwd="j", db="basemdk", port=3306)
 db.generate_mapping(create_tables=False)
-
+db.disconnect()
 
 def patient(id):
     p = Patient[id]
