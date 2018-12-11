@@ -11,18 +11,15 @@ OUTPUT_PATH = "/home/jimmy/mdk"
 # MDK_FILES = 
 
 
-def append_pdf(file_path, paths):
-    merger = PdfFileMerger()
-    # merger.append(PdfFileReader(file_path.resolve().open("rb")))
-    # print(PdfFileReader("/home/jimmy/mdk/DEMO_Jeannine-28_03_1933.pdf"))
-    # merger.append(PdfFileReader("/home/jimmy/mdk/DEMO_Jeannine-28_03_1933.pdf"))
-    print(file_path)
-    merger.append(PdfFileReader(str(file_path.resolve())))
-    for file in paths:
-        print(1)
-        print(file.resolve())
-        merger.append(PdfFileReader(str(file.resolve())))
-    merger.write(str(file_path))
+import asyncio
+async def append_pdf3(file_path, tmp, paths):
+    real_paths = " ".join([str(p.resolve()) for p in paths])
+    print(real_paths)
+    cmd = f"gs -dBATCH -dNOPAUSE -sPAPERSIZE=A4 -sDEVICE=pdfwrite -sOutputFile={file_path} {str(tmp)} {real_paths}"
+    cmd = cmd.split()
+    print( cmd)
+    p = await asyncio.create_subprocess_exec(*cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
+    await p.wait()
 
 def append_pdf2(file_path, tmp, paths):
     real_paths = " ".join([str(p.resolve()) for p in paths])
@@ -37,6 +34,28 @@ def make_paths(fods):
     p = Path("../fixtures")
     for n in range(1, 4):
         yield p / ".".join((str(n), "pdf"))
+
+
+async def process_deux(patient: Patient):
+    """crée un pdf depuis le contenu de la base"""
+    print('deuuuuuuuuux')
+    # texte = patient.content()
+    # pdf = pydf.generate_pdf(texte)
+    apydf = pydf.AsyncPydf()
+    pdf = await apydf.generate_pdf(patient.content())
+    ddn = patient.P_pddn.strftime("%d_%m_%Y") if patient.P_pddn else ""
+
+    
+
+    with NamedTemporaryFile(delete=False,suffix=".pdf", mode="wb") as p:
+        p.write(pdf)
+        tmp = Path(p.name)
+
+    file_path = "".join((OUTPUT_PATH+"/", patient.P_pnom + "_" + patient.P_pprenom + "-" + ddn + ".pdf"))
+    await append_pdf3( file_path, tmp, make_paths(patient.fods))
+    tmp.unlink()
+    return f"ok {patient.patient_id}"
+
 
 
 def process_one(patient: Patient):
@@ -56,11 +75,38 @@ def process_one(patient: Patient):
     tmp.unlink()
     return f"ok {patient.patient_id}"
 
+
 @db_session
 def proc_lot(range):
     """wrapper necessaire pour db_session"""
     for p in Patient.select()[range[0] : range[1]]:
         process_one(p)
+    # for p in Patient.select()[range[0] : range[1]]:
+
+async def proc_trans(ranged):
+    print("mkmok")
+    tasks = [process_deux(p) for p in Patient.select()[ranged[0] : ranged[1]]]
+    await asyncio.gather(*tasks)
+
+
+@db_session
+def proc_lot2(ranged):
+    """wrapper necessaire pour db_session"""
+    # for p in Patient.select()[range[0] : range[1]]:
+    #     process_one(p)
+    print("iljlijli")
+    # tasks = [asyncio.create_task(process_deux(p)) for p in Patient.select()[ranged[0] : ranged[1]]]
+    # asyncio.run(process_deux(Patient[45]))
+    # loop = asyncio.get_running_loop()
+    # loop.run_until_complete(tasks)
+    # asyncio.run(*tasks)
+    # asyncio.gather(*tasks)
+    # asyncio.run(asyncio.gather(*tasks))
+    print('iiiiiiiii')
+    asyncio.run(proc_trans(ranged))
+    # asyncio.run(asyncio.sleep(1))
+
+
 
 
 def chunk(total, size):
@@ -81,12 +127,23 @@ def generate_all():
     with concurrent.futures.ProcessPoolExecutor(
         max_workers=multiprocessing.cpu_count() * 2
     ) as executor:
-        executor.map(proc_lot, chunk(1, 8))
+        executor.map(proc_lot, chunk(50, 8))
+
+
+def generate_all2():
+    with db_session:
+        total = Patient.select().count()
+
+    with concurrent.futures.ProcessPoolExecutor(
+        max_workers=multiprocessing.cpu_count() * 2
+    ) as executor:
+        executor.map(proc_lot2, chunk(50, 8))
 
 
 if __name__ == "__main__":
 
-    generate_all()
+    # generate_all()
+    generate_all2()
     # p = Path('../fixtures')
     # files = [p / ".".join((str(n), 'pdf')) for n in range(1,4)]
     # merge(files)
