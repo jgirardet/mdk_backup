@@ -78,6 +78,8 @@ class Patient(db.Entity):
 
 <hr><hr>
 
+<h2>Pièces jointes</h2>
+
 </body>
 </html
 """

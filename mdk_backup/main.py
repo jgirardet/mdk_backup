@@ -5,8 +5,10 @@ import pydf
 import concurrent.futures
 import multiprocessing
 from pathlib import Path
+from  tempfile import NamedTemporaryFile
 
-PATH = "/home/jimmy/mdk"
+OUTPUT_PATH = "/home/jimmy/mdk"
+# MDK_FILES = 
 
 
 def append_pdf(file_path, paths):
@@ -14,15 +16,21 @@ def append_pdf(file_path, paths):
     # merger.append(PdfFileReader(file_path.resolve().open("rb")))
     # print(PdfFileReader("/home/jimmy/mdk/DEMO_Jeannine-28_03_1933.pdf"))
     # merger.append(PdfFileReader("/home/jimmy/mdk/DEMO_Jeannine-28_03_1933.pdf"))
-    import time
-    time.sleep(2)
-    merger.append(PdfFileReader(file_path.resolve().open("rb")))
     print(file_path)
+    merger.append(PdfFileReader(str(file_path.resolve())))
     for file in paths:
         print(1)
         print(file.resolve())
-        merger.append(PdfFileReader(file.resolve().open("rb")))
+        merger.append(PdfFileReader(str(file.resolve())))
     merger.write(str(file_path))
+
+def append_pdf2(file_path, tmp, paths):
+    real_paths = " ".join([str(p.resolve()) for p in paths])
+    print(real_paths)
+    cmd = f"gs -dBATCH -dNOPAUSE -sPAPERSIZE=A4 -sDEVICE=pdfwrite -sOutputFile={file_path} {str(tmp)} {real_paths}"
+    print( cmd)
+    import subprocess
+    subprocess.check_output(cmd, shell=True)
 
 
 def make_paths(fods):
@@ -37,19 +45,22 @@ def process_one(patient: Patient):
     pdf = pydf.generate_pdf(texte)
     ddn = patient.P_pddn.strftime("%d_%m_%Y") if patient.P_pddn else ""
 
-    file_path = Path(
-        PATH, patient.P_pnom + "_" + patient.P_pprenom + "-" + ddn + ".pdf"
-    )
-    file_path.write_bytes(pdf)
-    append_pdf( file_path, make_paths(patient.fods))
+    
+
+    with NamedTemporaryFile(delete=False,suffix=".pdf", mode="wb") as p:
+        p.write(pdf)
+        tmp = Path(p.name)
+
+    file_path = "".join((OUTPUT_PATH+"/", patient.P_pnom + "_" + patient.P_pprenom + "-" + ddn + ".pdf"))
+    append_pdf2( file_path, tmp, make_paths(patient.fods))
+    tmp.unlink()
     return f"ok {patient.patient_id}"
 
-
+@db_session
 def proc_lot(range):
     """wrapper necessaire pour db_session"""
-    with db_session():
-        for p in Patient.select()[range[0] : range[1]]:
-            process_one(p)
+    for p in Patient.select()[range[0] : range[1]]:
+        process_one(p)
 
 
 def chunk(total, size):
