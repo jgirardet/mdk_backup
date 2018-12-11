@@ -35,7 +35,7 @@ def append_pdf2(file_path, tmp, paths):
 
 def make_paths(fods):
     p = Path("../fixtures")
-    for n in range(1, 4):
+    for n in range(1, 9):
         yield p / ".".join((str(n), "pdf"))
 
 
@@ -81,7 +81,7 @@ def generate_all():
     with concurrent.futures.ProcessPoolExecutor(
         max_workers=multiprocessing.cpu_count() * 2
     ) as executor:
-        executor.map(proc_lot, chunk(1, 8))
+        executor.map(proc_lot, chunk(50, 8))
 
 
 if __name__ == "__main__":
