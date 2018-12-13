@@ -4,20 +4,84 @@
 		"selected_items":
 		[
 			[
+				"file",
+				"file_path\tparam"
+			],
+			[
+				"fil",
+				"file_path\tstatement"
+			],
+			[
+				"Pdf",
+				"PdfFileReader\tclass"
+			],
+			[
+				"gene",
+				"generate_pdf_from_texte"
+			],
+			[
 				"EP_",
-				"Ep_FK_Ex_id"
+				"Ep_resume\tstatement"
 			],
 			[
-				"se",
-				"self\tparam"
+				"Ep_",
+				"Ep_texte\tstatement"
 			],
 			[
-				"lign",
-				"ligne_ordo_id\tstatement"
+				"Certi",
+				"Certif_date"
 			],
 			[
-				"pyt",
-				"python_interpreter"
+				"ord",
+				"order_by"
+			],
+			[
+				"Cert",
+				"Certif_phrase"
+			],
+			[
+				"all",
+				"allergies"
+			],
+			[
+				"An",
+				"Ant_date"
+			],
+			[
+				"ant",
+				"antecedents"
+			],
+			[
+				"Ant",
+				"Ant_date"
+			],
+			[
+				"cons",
+				"consultations"
+			],
+			[
+				"Con",
+				"Cons_ctaille"
+			],
+			[
+				"Consco",
+				"Cons_cconclu"
+			],
+			[
+				"Consta",
+				"Cons_ctadcg"
+			],
+			[
+				"Cons_d",
+				"Cons_cdate"
+			],
+			[
+				"E",
+				"Ep_resume"
+			],
+			[
+				"Ep",
+				"Ep_texte"
 			],
 			[
 				"if",
@@ -204,6 +268,10 @@
 				"Bot"
 			],
 			[
+				"se",
+				"sendMessage"
+			],
+			[
 				"Inlin",
 				"InlineKeyboardMarkup\tclass"
 			],
@@ -288,28 +356,10 @@
 	"buffers":
 	[
 		{
-			"file": "pyproject.toml",
+			"file": "mdk_backup/requetes.txt",
 			"settings":
 			{
-				"buffer_size": 342,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "mdk_backup/__init__.py",
-			"settings":
-			{
-				"buffer_size": 85,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "todo",
-			"settings":
-			{
-				"buffer_size": 450,
+				"buffer_size": 4844,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -318,25 +368,34 @@
 			"file": "mdk_backup/entities.py",
 			"settings":
 			{
-				"buffer_size": 8400,
+				"buffer_size": 9578,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "mdk.sublime-project",
+			"file": "pyproject.toml",
 			"settings":
 			{
-				"buffer_size": 338,
+				"buffer_size": 362,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "mdk_backup/requetes.txt",
+			"file": "mdk_backup/main.py",
 			"settings":
 			{
-				"buffer_size": 4844,
+				"buffer_size": 2608,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "todo",
+			"settings":
+			{
+				"buffer_size": 485,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -374,10 +433,6 @@
 		"selected_items":
 		[
 			[
-				"pul",
-				"git: pull"
-			],
-			[
 				"push",
 				"git: push"
 			],
@@ -390,8 +445,60 @@
 				"Sublack: Start Blackd Server"
 			],
 			[
-				"build",
-				"Build: New Build System"
+				"pul",
+				"git: pull"
+			],
+			[
+				"refre",
+				"Project: Refresh Folders"
+			],
+			[
+				"comm",
+				"git: commit"
+			],
+			[
+				"githu",
+				"Github: History"
+			],
+			[
+				"refresh",
+				"Project: Refresh Folders"
+			],
+			[
+				"poetryad",
+				"Poetry: Add a package"
+			],
+			[
+				"search",
+				"Poetry: Serach for a package"
+			],
+			[
+				"stash",
+				"git: stash save"
+			],
+			[
+				"pull",
+				"git: pull"
+			],
+			[
+				"curs",
+				"Poetry: Add Package under cursor"
+			],
+			[
+				"sear",
+				"Poetry: Serach for a package"
+			],
+			[
+				"remove",
+				"Poetry: Remove package"
+			],
+			[
+				"shell",
+				"Poetry: Shell"
+			],
+			[
+				"oetry install",
+				"Poetry: Install"
 			],
 			[
 				"poetryset",
@@ -466,14 +573,6 @@
 				"View Package File"
 			],
 			[
-				"pull",
-				"git: pull"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"unit",
 				"UnitTesting: Test Current Package"
 			],
@@ -492,10 +591,6 @@
 			[
 				"pro",
 				"Project: Edit"
-			],
-			[
-				"refre",
-				"Project: Refresh Folders"
 			],
 			[
 				"uni",
@@ -570,10 +665,6 @@
 				"git: log"
 			],
 			[
-				"stash",
-				"git: stash save"
-			],
-			[
 				"diff",
 				"Sublack: Diff file"
 			],
@@ -608,10 +699,6 @@
 			[
 				"puhs",
 				"Git: Push"
-			],
-			[
-				"comm",
-				"Git: Commit"
 			],
 			[
 				"add",
@@ -806,7 +893,7 @@
 	},
 	"console":
 	{
-		"height": 371.0,
+		"height": 215.0,
 		"history":
 		[
 			"window.run_command('upgrade_all_package_command')",
@@ -950,12 +1037,23 @@
 	},
 	"expanded_folders":
 	[
-		"/home/jimmy/Seafile/dev/cabinet/mdk_backup",
-		"/home/jimmy/Seafile/dev/cabinet/mdk_backup/mdk_backup"
+		"/home/jimmy/dev/hp/mdk_backup",
+		"/home/jimmy/dev/hp/mdk_backup/fixtures",
+		"/home/jimmy/dev/hp/mdk_backup/mdk_backup"
 	],
 	"file_history":
 	[
-		"/home/jimmy/Seafile/dev/cabinet/mdk_backup/mdk_backup/main.py",
+		"/home/jimmy/dev/hp/mdk_backup/.venv/lib/python3.7/site-packages/PyPDF2/__init__.py",
+		"/home/jimmy/dev/hp/mdk_backup/.venv/lib/python3.7/site-packages/PyPDF2/merger.py",
+		"/home/jimmy/dev/hp/mdk_backup/.venv/lib/python3.7/site-packages/PyPDF2/pdf.py",
+		"/home/jimmy/dev/hp/mdk_backup/mdk_backup/ACCARIE_Caroline_1975-12-15 00:00:00.pdf",
+		"/home/jimmy/dev/hp/mdk_backup/mdk_backup/rien2.txt",
+		"/home/jimmy/dev/hp/mdk_backup/mdk_backup/html.css",
+		"/home/jimmy/dev/hp/mdk_backup/pyproject.toml",
+		"/home/jimmy/dev/hp/mdk_backup/mdk_backup/entities.py",
+		"/home/jimmy/dev/hp/mdk_backup/mdk_backup/__init__.py",
+		"/home/jimmy/dev/hp/mdk_backup/todo",
+		"/home/jimmy/dev/hp/mdk_backup/mdk_backup/main.py",
 		"/home/jimmy/.config/sublime-text-3/Packages/sublack/sublack.sublime-settings",
 		"/home/jimmy/Seafile/dev/cabinet/sublime_project/trashblack.sublime-project",
 		"/home/jimmy/.config/sublime-text-3/Packages/poem/tests/pyenv.py",
@@ -1070,7 +1168,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -1084,11 +1182,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"331717",
-			"334408",
-			"171004",
-			"mois",
-			"191750"
+			"--------------------------------------------------------",
+			"Patient",
+			"100",
+			"self",
+			"Courrier",
+			"courriers",
+			"Certif_date",
+			"allergies",
+			"cz",
+			"allergies",
+			"antecedents",
+			"antécédents",
+			"aller",
+			"content",
+			"ant",
+			"P_tel3",
+			")\n",
+			"self",
+			"s",
+			"examens",
+			"Examen",
+			"_examens",
+			"Ep_FK_P_pnum_id",
+			"X_FK_P_pnum_id",
+			"Ep_texte",
+			"X_ddate_resultats",
+			"Examen"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1106,1041 +1226,11 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pyproject.toml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 342,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								150,
-								150
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										155,
-										156
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/double_quote.png",
-										"region.greenish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										150,
-										151
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										155,
-										156
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/double_quote.png",
-										"region.greenish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										150,
-										151
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"git_savvy.repo_path": "/home/jimmy/Seafile/dev/cabinet/mdk_backup",
-							"syntax": "Packages/TOML/TOML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "mdk_backup/__init__.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 85,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								79,
-								79
-							]
-						],
-						"settings":
-						{
-							"SL.14.region_keys":
-							[
-								"sublime_linter.protected_regions",
-								"SL.flake8.Highlights.|0238f5008d1908f1f54447509e30407afccc3b5366f0cd236fdafe7b55c986a3|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.flake8.Highlights.|0db2108b05e8b7d15b6461c68a6a251d64830ae52643b89ba7e12f86566c0666|region.yellowish markup.warning.sublime_linter|32"
-							],
-							"SL.44.region_keys":
-							[
-								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"sublime_linter.protected_regions",
-								"SL.flake8.Gutter.|region.redish markup.error.sublime_linter|dot",
-								"SL.flake8.Highlights.|148805aaa463ae3d65523aa703b6471f3b5be026af23ac2795ac02975159375a|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|15f88f3730b3630c9429afdbc4380ed29494a718b3e034e609f22a39b2f97e32|region.redish markup.error.sublime_linter|32"
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "todo",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 450,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								93,
-								93
-							]
-						],
-						"settings":
-						{
-							"SL.22.region_keys":
-							[
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": 16,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"git_savvy.repo_path": "/home/jimmy/Seafile/dev/cabinet/mdk_backup",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "mdk_backup/entities.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8400,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6609,
-								6609
-							]
-						],
-						"settings":
-						{
-							"SL.17.region_keys":
-							[
-								"SL.flake8.Highlights.|0967a664a3c55aeef5d9ad0348fa2d6a1c20c7c7c5ab74a0ab34daf876ef373c|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|8af62402a5b5937f9159ca16ee1d027a3f9194b02bb014b9c89bdf2c298bdefd|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|95260eb989178c23b6801c403bb68a2e1edc12230818aa5591d4dd224e0b5db7|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|32858390f80afb33e608cfa935cba7205cea7d6646404ec492a8766e29a1749f|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|284a95fa5db26077ee9152aabdb34c4420c02f310ff4695985088d8e232ae9e8|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|3855ee7bf9d5c9753881a6dc1e83b6c1bb7a6df03f8fa84a3d27067bc54b61cd|region.yellowish markup.warning.sublime_linter|32",
-								"sublime_linter.protected_regions",
-								"SL.flake8.Highlights.|b5504017f38a7f121a618fda9d0b291862a9969a01cf3801d0b2bc36e2cd20f3|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|de1ebcd8ecd2e752ece726730e372c5bbbe6f29a159e8eb5ff8600a02701cd25|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|a39d57759db117fbfbd95951995d19b2b415cbdcbd9002a5476a493416875225|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|5937b1152da1d77e68e727b6c5a0f63c447b4d8c754ca76c8e8b375fd6975090|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|eb97b27b46f92f0874b68a59d281550321a768469122c8b080bc84f4b0d5507c|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|91d9af4bd3f8caee9f56c8375f3029bfa2da9a762726d67504aea72ef56cf461|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|9ad497b3c099c19ec29d8b42b0149de09aafd06295b8128e698e34509536cb14|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|1e1b5b2534eab342141483a0201baf3a13f7276b018043e34d14aae7e7aadbf2|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|e9c33080f3f03e05c5db600ee40c7e279f84dd7c50870f1268d3089d5303f908|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|ce9aa98a69446324588cc579fd72fb6d621996405d2659922bcf43aaae9280f6|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|e751f7c68da20422242701e77d57b720c36a0f6e021bc8a68ab383731805befe|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|9d43181e6adca185e5d59b9dd9f0cd024b924a96d8af040ebeda4213600062dc|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.flake8.Highlights.|8af1fd3acda3a41a470b77968d5758b1fc00513f0687311f8dde1e3878716b20|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|c4deda4b08cd224058bd77bebe6ea350121c705678cca10d045303eb93526884|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|f8fc91b0ca84278ce9cc91bd33b108177676b24ac05baa7ce87fee0a9da0ba1a|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|5a611ad00fcf0d6941d8bee7b777eb390affe9d929f7d9f61e97b58b925ed10c|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|41965b01df8af881d4b9b233032461b86688c46d207613abc465e90acdc47147|region.yellowish markup.warning.sublime_linter|32"
-							],
-							"SL.24.region_keys":
-							[
-								"SL.flake8.Highlights.|8c83829555e2bceffd38e4c3fb5779d67affce46a1f95f0a9d250cbd8eaf51a9|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|9d1f4e3cfe3a0ea9469830b6b99cedef03afb219f5baa64a5f43df87d1ccb8fd|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|b76ab9e3a8bae1bebdf79d7701a5115afb4086e13b86d333e7485dfa64d71b0f|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|e5a2dfb015fcb2065a2b04b5bd04a31a02e3dae04210a4c62cb65de19a1bfbbe|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|dc0b0536ecbdd289185450a4bf20b0385ae00207f6eb3b5335cc109814e294cc|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
-								"SL.flake8.Highlights.|dfa323d5b7c4cd4d8455b6936ff05c08a6fa27a8524d42176a9160ee618a58b5|region.yellowish markup.warning.sublime_linter|32",
-								"sublime_linter.protected_regions",
-								"SL.flake8.Highlights.|71b8e4e4b21dfd92c876977b750d55d33d3adaeaa519fea25af3d4dea8d8931f|region.yellowish markup.warning.sublime_linter|32"
-							],
-							"auto_complete_triggers":
-							[
-								{
-									"characters": ".",
-									"selector": "source.python - string - comment - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								},
-								{
-									"characters": ".",
-									"selector": "source.python - string - constant.numeric"
-								}
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"git_savvy.repo_path": "/home/jimmy/Seafile/dev/cabinet/mdk_backup",
-							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2852.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "mdk.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 338,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								256,
-								256
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										149,
-										150
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										0,
-										1
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										255,
-										256
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/square_bracket.png",
-										"region.bluish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										22,
-										23
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"git_savvy.repo_path": "/home/jimmy/Seafile/dev/cabinet/mdk_backup",
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 5,
 					"file": "mdk_backup/requetes.txt",
 					"semi_transient": false,
 					"settings":
@@ -2152,8 +1242,8 @@
 						"selection":
 						[
 							[
-								4049,
-								4049
+								4537,
+								4537
 							]
 						],
 						"settings":
@@ -2180,46 +1270,36 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -2234,7 +1314,17 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -2253,46 +1343,36 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -2307,16 +1387,1596 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
-							"git_savvy.repo_path": "/home/jimmy/Seafile/dev/cabinet/mdk_backup",
+							"git_savvy.repo_path": "/home/jimmy/dev/hp/mdk_backup",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 568.0,
+						"translation.y": 1360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mdk_backup/entities.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								521,
+								521
+							]
+						],
+						"settings":
+						{
+							"SL.104.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5f1f672db75399a3a44b329cf17970e45abaec804a45b28e575f793d455b606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.107.region_keys":
+							[
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5f1f672db75399a3a44b329cf17970e45abaec804a45b28e575f793d455b606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.14.region_keys":
+							[
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|741027f187659a0be18bec67a1a19498c98ce2cb2cca4198316a5fca810f9f70|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ee0c45d77158cb67a5ea4762d02443b453faad9a85446b208ecbcc9b3ff9e9b|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2fd3c383b5d2a6c2922bf2f311fe85e7ea93acc1a3d4a5f741c271903869d4fa|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|54e69acdd36d1c697e422bf0073fe84a2157d6e3ad9690fea2f8dbb416939bf9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|09d0af823a1a8ac1a77d9b28880773605ecf9862952dfae2f370d8261e5cc9dc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a8a7f6a6185fb4e0791c513fbf344787cb258b19f1dc5c81f3f442d2af2f9714|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a39d57759db117fbfbd95951995d19b2b415cbdcbd9002a5476a493416875225|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a9f0c993f0edf86d02e1573fe99270a4b6772b42f16099de38db52aeef33691c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|870b16150dc172742fc2505206b3254ecf4e5235e6defa6aa3b5802cc79f721f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a02f6bd3ecf8dab92638296b31e6e9a0cf57ff2ad3a9b57ddf742e362584570d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c27e80cc47599b4443175ee5ad4dafbd478c87d25bccd9111862702b760ac9c1|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e02741c6f1aefc122a5dda88152b0eb32a842f583f25e9aa36fe46e19c996725|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|183baa71449341b2f0d8c8497858ff122e862e1e2a430fc0fb57151c40d21aba|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1c37d9df7d13e3ac9b3e074033400cefc60276712d27b016155a99fd3dc615d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d47a3950891871a499d8d7563ebdfd4dbfd7bd0b54f5e70c65ce31e5dfaaddea|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|446caa9066cc6ebd5e6e6c6dda32eb560c75bb2b720b682cc2bfad412531f498|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|711a3cecad27c637a5d7c41d55e5e4d1c317eefc2be92712c7338984558776a3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|40fc553bbdab5997ed2764c3151192a1fca99434476f8fc2c74185c8cbcbd11a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|43d309a89f3c838397009cf86912148a24e6e050965d03d9b30bf481d66cc74c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|48d2ae4a7ccffd1e8976243d52ec5892f8b473106a9f9d2b7747f5d2cd099b73|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0b154e97407075a973b40bcd37d9de578655d2ba73aadc79bbc772050a95b7ab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2259654e4a185132c9b4b8257d7075c915b258edd3254ef08518d09a07e17e85|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|70565c4930c7e7e527e5e2a51b7e65d6e0dab52d63ac19d3742c218876cfa6dd|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9dffa6376ebef5d52ac82e73334c89a9a0f18fdf189c738228a9a5d2d729c5de|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0d53d146f488bea5d02fbd029e5c72f4af479744ae0331fcb08ab7d9dbfc85f7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f8fc91b0ca84278ce9cc91bd33b108177676b24ac05baa7ce87fee0a9da0ba1a|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.15.region_keys":
+							[
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7e9f77a2ade6642aec4677bf1b3d13e85f1e3a2fe567b911f3c58ee45ce5bb92|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1d35f6b7171b29038a2b6970c6a3bdde00b31d353e32e7a08eabf578a1efeff7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c1e312a1f19520591a401b5e08c4a63b5ffc3bd542d15b43820f748a886f0d0f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.20.region_keys":
+							[
+								"SL.flake8.Highlights.|5a611ad00fcf0d6941d8bee7b777eb390affe9d929f7d9f61e97b58b925ed10c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|32858390f80afb33e608cfa935cba7205cea7d6646404ec492a8766e29a1749f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3855ee7bf9d5c9753881a6dc1e83b6c1bb7a6df03f8fa84a3d27067bc54b61cd|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|4e83efe5ee9896cb28ae638f978203cf5b83c48b6ea44747fc9bb72636b43f18|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|91d9af4bd3f8caee9f56c8375f3029bfa2da9a762726d67504aea72ef56cf461|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8134a4956cc556c9d91a621b666eb3b1421a8ced4dec3eba071ea769c9c50a41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e9c33080f3f03e05c5db600ee40c7e279f84dd7c50870f1268d3089d5303f908|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|f8fc91b0ca84278ce9cc91bd33b108177676b24ac05baa7ce87fee0a9da0ba1a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7c58bbc58a8ed625760328aba0b7e969d91244d48883aaf7f30c2dccda3cccb7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ce9aa98a69446324588cc579fd72fb6d621996405d2659922bcf43aaae9280f6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|41965b01df8af881d4b9b233032461b86688c46d207613abc465e90acdc47147|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9ad497b3c099c19ec29d8b42b0149de09aafd06295b8128e698e34509536cb14|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|de1ebcd8ecd2e752ece726730e372c5bbbe6f29a159e8eb5ff8600a02701cd25|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5937b1152da1d77e68e727b6c5a0f63c447b4d8c754ca76c8e8b375fd6975090|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a39d57759db117fbfbd95951995d19b2b415cbdcbd9002a5476a493416875225|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|284a95fa5db26077ee9152aabdb34c4420c02f310ff4695985088d8e232ae9e8|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eb97b27b46f92f0874b68a59d281550321a768469122c8b080bc84f4b0d5507c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c4deda4b08cd224058bd77bebe6ea350121c705678cca10d045303eb93526884|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9d43181e6adca185e5d59b9dd9f0cd024b924a96d8af040ebeda4213600062dc|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.43.region_keys":
+							[
+								"SL.flake8.Highlights.|636cfad3847afebb314a5b93ace2f69fb84a2e972e753713fe2fc06c10cdb01b|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|0734638613ba45c2f1c34180184b38009e225fa31dfd9425b973f6b9e1ebd17d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|75206f68701cc45d72c19336ecd568dcec29a84c3daea756fa6258fc21f263a5|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|87dd054151ab81052983adcd1047dbd1a9344c9904edf8baee2600aba0ce20ed|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|d897d8285f7a15f4be8274523e7685392e48b8b73a8e77a9d39395bd8cabd715|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1d4876609f80ab5717cca73bfbcba500303499e215a5aaec48e754297d9af1f6|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.49.region_keys":
+							[
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5f1f672db75399a3a44b329cf17970e45abaec804a45b28e575f793d455b606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.66.region_keys":
+							[
+								"SL.flake8.Highlights.|636cfad3847afebb314a5b93ace2f69fb84a2e972e753713fe2fc06c10cdb01b|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|0734638613ba45c2f1c34180184b38009e225fa31dfd9425b973f6b9e1ebd17d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|75206f68701cc45d72c19336ecd568dcec29a84c3daea756fa6258fc21f263a5|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|87dd054151ab81052983adcd1047dbd1a9344c9904edf8baee2600aba0ce20ed|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|d897d8285f7a15f4be8274523e7685392e48b8b73a8e77a9d39395bd8cabd715|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1d4876609f80ab5717cca73bfbcba500303499e215a5aaec48e754297d9af1f6|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.82.region_keys":
+							[
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5f1f672db75399a3a44b329cf17970e45abaec804a45b28e575f793d455b606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"git_savvy.repo_path": "/home/jimmy/dev/hp/mdk_backup",
+							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pyproject.toml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"SL.92.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"git_savvy.repo_path": "/home/jimmy/dev/hp/mdk_backup",
+							"syntax": "Packages/TOML/TOML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "mdk_backup/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								653,
+								653
+							]
+						],
+						"settings":
+						{
+							"SL.107.region_keys":
+							[
+								"SL.flake8.Highlights.|5009f4332f88e2086e0953a5145821f488784b1abcb36f72381109a76fd2b46b|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|930d5ca3e27c397433da94511232318eab897e3c47a03ce286c6a7aa1aad68f3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5bf37435d891cc561f8ce1157e4ec255ed76abc4e7497bcb99682cee1a16fcb4|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7e6fcd587477c1293cd2e3661a7e6077a13a2584bbdf9264abbb2ec2185a9b7a|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|479c445a4c9ed1435fd0e0872d2952b3683f1f8e42ba646cae9bc711dc94cb7d|region.redish markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|c7836fb8bc737c2469aa9880b4dd1343c55b2379dc149f690d2b9937f416962d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bda009dc34e924e1e19f93e97437dd91f3b0668035e706cab3d95c9d4819d83f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.flake8.Highlights.|318cbe9fee16681eba8f6828a9e29a584f2c621d902e658ae9c79be2e5589064|region.redish markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|611f63992010380980ec9d1609484479d174bc03154e7ba11d472914cb09f18c|region.redish markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|7762994a841e11e06f67691afa047c57075f3fe0111f98278864886907e0c903|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.17.region_keys":
+							[
+								"SL.flake8.Highlights.|262d783c33f63710211894b52f092ebc430dde4250bae61d19215f172bd66f55|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|4f92226b1a3abec97a7305f277ed9a2cabd8f909191e2abbee9cae23f40a5a77|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f4cb9adf8b21082aa9595451092baf3fa93e2563b1484f3843f17805f153dc19|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot"
+							],
+							"SL.52.region_keys":
+							[
+								"SL.flake8.Highlights.|5bf37435d891cc561f8ce1157e4ec255ed76abc4e7497bcb99682cee1a16fcb4|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0a809e98afb8017d13b4276e720e76eb1b7e49856e4e51a8dff1bd1f13728f80|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.flake8.Highlights.|7e6fcd587477c1293cd2e3661a7e6077a13a2584bbdf9264abbb2ec2185a9b7a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0758e9c3c32527505253d49aaafeda6c0d772ebef655d091182f10043b55e8ef|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|611f63992010380980ec9d1609484479d174bc03154e7ba11d472914cb09f18c|region.redish markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|479c445a4c9ed1435fd0e0872d2952b3683f1f8e42ba646cae9bc711dc94cb7d|region.redish markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|318cbe9fee16681eba8f6828a9e29a584f2c621d902e658ae9c79be2e5589064|region.redish markup.error.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|5009f4332f88e2086e0953a5145821f488784b1abcb36f72381109a76fd2b46b|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7762994a841e11e06f67691afa047c57075f3fe0111f98278864886907e0c903|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|bda009dc34e924e1e19f93e97437dd91f3b0668035e706cab3d95c9d4819d83f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|572d24611d5315fd31f77bfa2f21a5d4cd9790062a213a27e3027fb4024c75b7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|930d5ca3e27c397433da94511232318eab897e3c47a03ce286c6a7aa1aad68f3|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.87.region_keys":
+							[
+								"SL.flake8.Highlights.|7e6fcd587477c1293cd2e3661a7e6077a13a2584bbdf9264abbb2ec2185a9b7a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|bad9c0e3535e64f80ac14e60070931f07c8efa1af4c98747279f0526952482ef|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|243394710546453798deaed5bad5a473d60a7a90c711953a7b6b1daccce8fd0f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|479c445a4c9ed1435fd0e0872d2952b3683f1f8e42ba646cae9bc711dc94cb7d|region.redish markup.error.sublime_linter|32",
+								"SL.flake8.Highlights.|c999f0176bb5bff59fac272ed8f9b20a788dca92e6cec67cacf0f5a865f920b8|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|318cbe9fee16681eba8f6828a9e29a584f2c621d902e658ae9c79be2e5589064|region.redish markup.error.sublime_linter|32",
+								"SL.flake8.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.flake8.Highlights.|611f63992010380980ec9d1609484479d174bc03154e7ba11d472914cb09f18c|region.redish markup.error.sublime_linter|32"
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"git_savvy.repo_path": "/home/jimmy/dev/hp/mdk_backup",
+							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mdk_backup/entities.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2467,
+								2467
+							]
+						],
+						"settings":
+						{
+							"SL.107.region_keys":
+							[
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5f1f672db75399a3a44b329cf17970e45abaec804a45b28e575f793d455b606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.108.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5f1f672db75399a3a44b329cf17970e45abaec804a45b28e575f793d455b606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.14.region_keys":
+							[
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|741027f187659a0be18bec67a1a19498c98ce2cb2cca4198316a5fca810f9f70|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ee0c45d77158cb67a5ea4762d02443b453faad9a85446b208ecbcc9b3ff9e9b|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2fd3c383b5d2a6c2922bf2f311fe85e7ea93acc1a3d4a5f741c271903869d4fa|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|54e69acdd36d1c697e422bf0073fe84a2157d6e3ad9690fea2f8dbb416939bf9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|09d0af823a1a8ac1a77d9b28880773605ecf9862952dfae2f370d8261e5cc9dc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a8a7f6a6185fb4e0791c513fbf344787cb258b19f1dc5c81f3f442d2af2f9714|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a39d57759db117fbfbd95951995d19b2b415cbdcbd9002a5476a493416875225|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a9f0c993f0edf86d02e1573fe99270a4b6772b42f16099de38db52aeef33691c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|870b16150dc172742fc2505206b3254ecf4e5235e6defa6aa3b5802cc79f721f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a02f6bd3ecf8dab92638296b31e6e9a0cf57ff2ad3a9b57ddf742e362584570d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c27e80cc47599b4443175ee5ad4dafbd478c87d25bccd9111862702b760ac9c1|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e02741c6f1aefc122a5dda88152b0eb32a842f583f25e9aa36fe46e19c996725|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|183baa71449341b2f0d8c8497858ff122e862e1e2a430fc0fb57151c40d21aba|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1c37d9df7d13e3ac9b3e074033400cefc60276712d27b016155a99fd3dc615d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d47a3950891871a499d8d7563ebdfd4dbfd7bd0b54f5e70c65ce31e5dfaaddea|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|446caa9066cc6ebd5e6e6c6dda32eb560c75bb2b720b682cc2bfad412531f498|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|711a3cecad27c637a5d7c41d55e5e4d1c317eefc2be92712c7338984558776a3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|40fc553bbdab5997ed2764c3151192a1fca99434476f8fc2c74185c8cbcbd11a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|43d309a89f3c838397009cf86912148a24e6e050965d03d9b30bf481d66cc74c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|48d2ae4a7ccffd1e8976243d52ec5892f8b473106a9f9d2b7747f5d2cd099b73|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0b154e97407075a973b40bcd37d9de578655d2ba73aadc79bbc772050a95b7ab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2259654e4a185132c9b4b8257d7075c915b258edd3254ef08518d09a07e17e85|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|70565c4930c7e7e527e5e2a51b7e65d6e0dab52d63ac19d3742c218876cfa6dd|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9dffa6376ebef5d52ac82e73334c89a9a0f18fdf189c738228a9a5d2d729c5de|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0d53d146f488bea5d02fbd029e5c72f4af479744ae0331fcb08ab7d9dbfc85f7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|f8fc91b0ca84278ce9cc91bd33b108177676b24ac05baa7ce87fee0a9da0ba1a|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.18.region_keys":
+							[
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7e9f77a2ade6642aec4677bf1b3d13e85f1e3a2fe567b911f3c58ee45ce5bb92|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1d35f6b7171b29038a2b6970c6a3bdde00b31d353e32e7a08eabf578a1efeff7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c1e312a1f19520591a401b5e08c4a63b5ffc3bd542d15b43820f748a886f0d0f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.20.region_keys":
+							[
+								"SL.flake8.Highlights.|5a611ad00fcf0d6941d8bee7b777eb390affe9d929f7d9f61e97b58b925ed10c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|32858390f80afb33e608cfa935cba7205cea7d6646404ec492a8766e29a1749f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3855ee7bf9d5c9753881a6dc1e83b6c1bb7a6df03f8fa84a3d27067bc54b61cd|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|4e83efe5ee9896cb28ae638f978203cf5b83c48b6ea44747fc9bb72636b43f18|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|91d9af4bd3f8caee9f56c8375f3029bfa2da9a762726d67504aea72ef56cf461|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|8134a4956cc556c9d91a621b666eb3b1421a8ced4dec3eba071ea769c9c50a41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e9c33080f3f03e05c5db600ee40c7e279f84dd7c50870f1268d3089d5303f908|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|f8fc91b0ca84278ce9cc91bd33b108177676b24ac05baa7ce87fee0a9da0ba1a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|7c58bbc58a8ed625760328aba0b7e969d91244d48883aaf7f30c2dccda3cccb7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ce9aa98a69446324588cc579fd72fb6d621996405d2659922bcf43aaae9280f6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|41965b01df8af881d4b9b233032461b86688c46d207613abc465e90acdc47147|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9ad497b3c099c19ec29d8b42b0149de09aafd06295b8128e698e34509536cb14|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|de1ebcd8ecd2e752ece726730e372c5bbbe6f29a159e8eb5ff8600a02701cd25|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|5937b1152da1d77e68e727b6c5a0f63c447b4d8c754ca76c8e8b375fd6975090|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a39d57759db117fbfbd95951995d19b2b415cbdcbd9002a5476a493416875225|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|284a95fa5db26077ee9152aabdb34c4420c02f310ff4695985088d8e232ae9e8|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eb97b27b46f92f0874b68a59d281550321a768469122c8b080bc84f4b0d5507c|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c4deda4b08cd224058bd77bebe6ea350121c705678cca10d045303eb93526884|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|9d43181e6adca185e5d59b9dd9f0cd024b924a96d8af040ebeda4213600062dc|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.43.region_keys":
+							[
+								"SL.flake8.Highlights.|636cfad3847afebb314a5b93ace2f69fb84a2e972e753713fe2fc06c10cdb01b|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|0734638613ba45c2f1c34180184b38009e225fa31dfd9425b973f6b9e1ebd17d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|75206f68701cc45d72c19336ecd568dcec29a84c3daea756fa6258fc21f263a5|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|87dd054151ab81052983adcd1047dbd1a9344c9904edf8baee2600aba0ce20ed|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|d897d8285f7a15f4be8274523e7685392e48b8b73a8e77a9d39395bd8cabd715|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1d4876609f80ab5717cca73bfbcba500303499e215a5aaec48e754297d9af1f6|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.53.region_keys":
+							[
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5f1f672db75399a3a44b329cf17970e45abaec804a45b28e575f793d455b606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.66.region_keys":
+							[
+								"SL.flake8.Highlights.|636cfad3847afebb314a5b93ace2f69fb84a2e972e753713fe2fc06c10cdb01b|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|0734638613ba45c2f1c34180184b38009e225fa31dfd9425b973f6b9e1ebd17d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|75206f68701cc45d72c19336ecd568dcec29a84c3daea756fa6258fc21f263a5|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|87dd054151ab81052983adcd1047dbd1a9344c9904edf8baee2600aba0ce20ed|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|d897d8285f7a15f4be8274523e7685392e48b8b73a8e77a9d39395bd8cabd715|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1d4876609f80ab5717cca73bfbcba500303499e215a5aaec48e754297d9af1f6|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.82.region_keys":
+							[
+								"SL.flake8.Highlights.|0775a2cb1e8932a03ded654b2405c2d7a8cd14be47d6133ba3363e0569e84dd9|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.flake8.Highlights.|e90cb7a932d3f6adea6ad140631582bf34c9453bceab2950b25251dad3a7e656|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|b99782ffc9d52b6f687c3284476422a53a3dfdf5f5228c627fa06dce770dbfc2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2722ddae6308ccb57a58f821e60c08ec485e6005140559b3e78637de064d0e54|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e8ee850cb0c8c4da271f9c0dfdece81315b1ad327558eb947fca5be4d3f842e7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|054429b9d5259d36dd2a4e29238a880775a199c4c7b4a0bdfd86629ba9f65f41|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6dc23563bc24c8dc34696a2f0a63c5e070c50823fb5da11ff477169f8ba5fb52|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c12235748709375348cf2c94ecf02d5b19a9f1060721213f7de069585d4b3c48|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|d913d3afaf349a07716a3b54d79235964668e6135119d5bb348624124e81aa97|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|60f7edad77dfe977b7d223eb47d0c1f7c8cba620085b36a7e891dc54a64bd5e3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|775c0e0d1e97e5ec93faf84f788fcd7b7f90e6e83641629a13fe54849c97116d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|6b1430596c9cf78b65333b598e3160e903412708ed44ec5c037f66f3ed10f809|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|c93e083b03271fdb7a23093c805183b939b3529ce2742f462ad2ac07840ae394|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|73c71e10122e94e475a695a215610284f68091dc41198dd47051702ed0943fc7|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3c04f4dc106e7e2c6aa7c59d52d4c56884c3d4870401a0231d0df8efcd8c5fdb|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|075d285d41413cffbea7fb84c03f4e4d0ac32417409d8de70e4082d0f489fd55|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|eeb36331b3072e579c3c65a725f3c5c20dc10d1ae46f3206f775b5ccea0b042f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e1e5254f3177e6cfa487144b5c89f924571e312d033dd8d2e3f72c5a426db477|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|4d89a8890f969302027e7c2285f385e0a3d8405370668de70eda8061e7b75dda|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ec11e09bb7d92f8e1a1baf1adc9d0476033237ef48e0cf2f138dc2b546e96c84|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e619b5e10998720a0c8af47320d7f49183f2f8b8ad74598b72fd3dc2d9e7c233|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|3cb2a74db97f9e2c6bd3d3992766ecd4093a3526c7f666a66530fe322d21e1fe|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|e5f1f672db75399a3a44b329cf17970e45abaec804a45b28e575f793d455b606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|ef085f96e115793b816b75bdaba77c83af4b692d7a810a6dbf87f06509d5a76e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|71d32a68fea91f410019a8ebf72ad41122f49f4983ce9ec1a50575c9d4668466|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.flake8.Highlights.|461c7f549dda5dd248b54473aa6a544a2920e4a2c7f56c26af53e19701c84dab|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|2ff78e87ac2e4ba2d7f342b628860ff609b25a6696ca1a1ae8dad7f4b8f7c4bc|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|a2351ee0f0bbce98e7dc7df1b4ef3f4743fddcc7d22bc3889af5c6baf4a4cf66|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|1ec89557f4b16b667775ca790d328fb1dd27ce09d6960eb27f62cd22be373ac6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.flake8.Highlights.|51c75a70180e8dd0f161b565af81d38104ca76dd10f5ec2d9f925cb6d9f55189|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 18,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2466,
+										2467
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2458,
+										2459
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"git_savvy.repo_path": "/home/jimmy/dev/hp/mdk_backup",
+							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1391.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "todo",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"SL.15.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"git_savvy.repo_path": "/home/jimmy/dev/hp/mdk_backup",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -2324,7 +2984,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -2350,7 +3010,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.39848812095,
 			1.0
 		],
 		"rows":
@@ -2363,6 +3023,10 @@
 	"output.GitSavvy":
 	{
 		"height": 104.0
+	},
+	"output.Poetry_shell":
+	{
+		"height": 116.0
 	},
 	"output.SublimeLinter":
 	{
@@ -2378,7 +3042,7 @@
 	},
 	"output.exec":
 	{
-		"height": 303.0
+		"height": 197.0
 	},
 	"output.find_results":
 	{
@@ -2392,7 +3056,7 @@
 	"project": "mdk.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2402,16 +3066,36 @@
 		"selected_items":
 		[
 			[
+				"enti",
+				"mdk_backup/entities.py"
+			],
+			[
+				"entit",
+				"mdk_backup/entities.py"
+			],
+			[
+				"pypro",
+				"pyproject.toml"
+			],
+			[
+				"main",
+				"mdk_backup/main.py"
+			],
+			[
+				"todo",
+				"todo"
+			],
+			[
+				"en",
+				"mdk_backup/entities.py"
+			],
+			[
 				"util",
 				"sublack/utils.py"
 			],
 			[
 				"erver",
 				"sublack/server.py"
-			],
-			[
-				"main",
-				"main.py"
 			],
 			[
 				"test_blackd",
@@ -2503,16 +3187,20 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "sublac",
 		"selected_items":
 		[
 			[
-				"",
-				"~/Seafile/dev/cabinet/mapistar/mapistar.sublime-project"
+				"sublac",
+				"~/dev/hp/sublime-projects/sublack.sublime-project"
 			],
 			[
 				"poe",
 				"~/seafile/dev/cabinet/sublime_project/poem.sublime-project"
+			],
+			[
+				"",
+				"~/seafile/dev/cabinet/sublime_project/rhym.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -2526,7 +3214,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 		"last_automatic_layout":
