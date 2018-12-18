@@ -1,6 +1,16 @@
-from pony.orm import Database, Optional, db_session, PrimaryKey, Set, select, desc, UnrepeatableReadError
+from pony.orm import (
+    Database,
+    Optional,
+    db_session,
+    PrimaryKey,
+    Set,
+    select,
+    desc,
+    UnrepeatableReadError,
+)
 from datetime import datetime, date, timedelta
 from decimal import Decimal
+from pathlib import Path
 
 db = Database()
 
@@ -84,6 +94,7 @@ class Patient(db.Entity):
 </html
 """
 
+
 class Fod(db.Entity):
     _table_ = "s_f_others_docs"
     fod_id = PrimaryKey(int, column="Fod_id")
@@ -93,6 +104,19 @@ class Fod(db.Entity):
     Fod_Path_Doc = Optional(str)
     Fod_Type = Optional(int)
     Fod_FK_P_pnum_id = Optional(Patient)
+
+    FOG_PATHS = {
+        1: "Pathto?",
+        2: "PAth",
+        3: "Path_to_bio",
+        4: "pathtocourriers",
+        5: "pzth_to_exam",
+    }
+
+    @property
+    def path(self, base):
+        base = Path(base)
+        return Path(base, self.FOG_PATHS[self.Fod_Type], self.Fod_Path_Doc)
 
 
 class Consultation(db.Entity):
@@ -186,6 +210,7 @@ class Antecedent(db.Entity):
     def content(self):
         return f"""{self.Ant_texte.strip()}: {self.Ant_resume.strip()} ({self.Ant_date.strftime('%Y') if self.Ant_date else ""}) {"fam" if self.Ant_fam else ""}"""
 
+
 class Allergie(db.Entity):
     _table_ = "s_f_allergies_pat"
     antecedent_id = PrimaryKey(int, column="Fap_id")
@@ -195,7 +220,6 @@ class Allergie(db.Entity):
 
     def __repr__(self):
         return self.Fap_Allergie_Nom + ": " + self.Fap_Allergie_Comment
-
 
     def content(self):
         return self.Fap_Allergie_Nom.strip() + ": " + self.Fap_Allergie_Comment.strip()
@@ -216,6 +240,7 @@ class Certificat(db.Entity):
         return f"""<p><strong>{self.Certif_date.strftime('%d %m %Y') if  self.Certif_date else ''}</strong> {self.Certif_titre.strip()}
          </br>{self.Certif_phrase.strip()}</p>"""
 
+
 class Courrier(db.Entity):
     _table_ = "s_courrier"
     courrier_id = PrimaryKey(int, column="C_id")
@@ -225,10 +250,10 @@ class Courrier(db.Entity):
     C_write = Optional(str)
     C_FK_P_pnum_id = Optional("Patient")
 
-
     def content(self):
         return f"""<p><strong>{self.C_date.strftime('%d %m %Y')}</strong> 
         </br> {self.C_entete} {self.C_adressage.strip()} {self.C_write.strip()}</br>"""
+
 
 class Examen(db.Entity):
     _table_ = "s_l_excomplementr"
@@ -237,25 +262,27 @@ class Examen(db.Entity):
     Ep_texte = Optional(str)
     Ep_resume = Optional(str)
     Ep_FK_P_pnum_id = Optional("Patient")
-    Ep_FK_Ex_id = Optional('ExamenNom')
+    Ep_FK_Ex_id = Optional("ExamenNom")
 
     def content(self):
         try:
             nom = self.Ep_FK_Ex_id.content()
         except UnrepeatableReadError:
-            nom=""
+            nom = ""
         # date = self.Ep_dat.strftime('%d %m %Y') if  self.Ep_dat else ''
         return f"""<p><strong>{self.Ep_dat.strftime('%d %m %Y') if  self.Ep_dat else ''}</strong>  {nom.strip()} 
         </br> {self.Ep_texte.strip()} {self.Ep_resume.strip()}</p>"""
 
+
 class ExamenNom(db.Entity):
-    _table_ ="s_ex_complementr"
+    _table_ = "s_ex_complementr"
     examen_nom_id = PrimaryKey(int, column="Ex_id")
     Ex_nom = Optional(str)
     examen = Set(Examen)
 
     def content(self):
         return f"{self.Ex_nom}"
+
 
 class Bio(db.Entity):
     _table_ = "s_exam_demandes"
@@ -265,11 +292,13 @@ class Bio(db.Entity):
     X_FK_P_pnum_id = Optional("Patient")
 
     def content(self):
-            return f"""<p><strong>{self.X_ddate_resultats.strftime('%d %m %Y') if self.X_ddate_resultats else ''}</strong> {self.X_boite_olettre.strip()}</p>"""
+        return f"""<p><strong>{self.X_ddate_resultats.strftime('%d %m %Y') if self.X_ddate_resultats else ''}</strong> {self.X_boite_olettre.strip()}</p>"""
+
 
 db.bind("mysql", host="localhost", user="j", passwd="j", db="basemdk", port=3306)
 db.generate_mapping(create_tables=False)
 db.disconnect()
+
 
 def patient(id):
     p = Patient[id]
@@ -311,9 +340,9 @@ def ligne(id=None):
 def main():
     # print(Patient[1367].content())
     print(Patient[681].content())
-    with open('rien.txt', 'wt') as file:
+    with open("rien.txt", "wt") as file:
         file.write(Patient[490].content())
-    with open('rien2.txt', 'wt') as file:
+    with open("rien2.txt", "wt") as file:
         file.write(Patient[1367].content())
     # (list(print(f.to_dict()) for f in p.bios))
     # fod()
