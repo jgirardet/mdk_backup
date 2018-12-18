@@ -12,6 +12,9 @@ from datetime import datetime, date, timedelta
 from decimal import Decimal
 from pathlib import Path
 
+
+MDK_DOC = "smb://sauzetmed/cabinetmedical/basemdk_local/Documents"
+
 db = Database()
 
 
@@ -108,15 +111,15 @@ class Fod(db.Entity):
     FOG_PATHS = {
         1: "Pathto?",
         2: "PAth",
-        3: "Path_to_bio",
-        4: "pathtocourriers",
-        5: "pzth_to_exam",
+        3: "BIO/Autres",
+        4: "SPE/Autres",
+        5: "Examens/Autres",
     }
 
     @property
-    def path(self, base):
-        base = Path(base)
-        return Path(base, self.FOG_PATHS[self.Fod_Type], self.Fod_Path_Doc)
+    def path(self):
+        return Path(MDK_DOC, self.FOG_PATHS[self.Fod_Type], self.Fod_Path_Doc)
+
 
 
 class Consultation(db.Entity):

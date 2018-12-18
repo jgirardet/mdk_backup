@@ -8,7 +8,6 @@ from tempfile import NamedTemporaryFile
 import subprocess
 
 OUTPUT_PATH = "/home/jimmy/mdk"
-MDK_FILES = "this pasth"
 
 
 def append_pdf(file_path, tmp, paths):
