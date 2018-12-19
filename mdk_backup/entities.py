@@ -13,7 +13,7 @@ from decimal import Decimal
 from pathlib import Path
 
 
-MDK_DOC = "smb://sauzetmed/cabinetmedical/basemdk_local/Documents"
+MDK_DOC = "/home/jimmy/mdkdoc"
 
 db = Database()
 
@@ -96,6 +96,13 @@ class Patient(db.Entity):
 </body>
 </html
 """
+    
+    @property
+    def used_fods(self):
+        ff =  self.fods.select(lambda f: f.Fod_From in [4,5])
+        return  " ".join(f.path for f in ff)
+
+        
 
 
 class Fod(db.Entity):
@@ -109,16 +116,23 @@ class Fod(db.Entity):
     Fod_FK_P_pnum_id = Optional(Patient)
 
     FOG_PATHS = {
-        1: "Pathto?",
-        2: "PAth",
-        3: "BIO/Autres",
-        4: "SPE/Autres",
-        5: "Examens/Autres",
+        # 1: "Pathto?",
+        # 2: "PAth",
+        # 3: "DocumentsBIO/Autres",
+        4: ["Documents", "SPE", "Autres"],
+        5: ["Documents","Examens","Autres"],
     }
+
+    def __str__(self):
+        return f"id:{self.fod_id} from:{self.Fod_From }"
 
     @property
     def path(self):
-        return Path(MDK_DOC, self.FOG_PATHS[self.Fod_Type], self.Fod_Path_Doc)
+        p = Path(MDK_DOC, *self.FOG_PATHS[self.Fod_From], self.Fod_Path_Doc)
+        if p.exists():
+            return str(p.resolve())
+        else:
+            return ""
 
 
 

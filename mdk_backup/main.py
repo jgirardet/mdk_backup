@@ -6,19 +6,29 @@ import multiprocessing
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 import subprocess
+import shutil
 
 OUTPUT_PATH = "/home/jimmy/mdk"
 
+merge_pdf_failed = multiprocessing.Queue()
 
-def append_pdf(file_path, tmp, paths):
-    real_paths = " ".join([str(p.resolve()) for p in paths])
-    cmd = f"gs -dBATCH -dNOPAUSE -sPAPERSIZE=A4 -sDEVICE=pdfwrite -sOutputFile={file_path} {str(tmp)} {real_paths}"
-    subprocess.check_output(cmd, shell=True)
+
+def append_pdf(file_path, tmp, patient):
+    fods = patient.used_fods
+    if not fods:
+        shutil.copy(tmp, file_path)
+        return
+    cmd = f"gs -q -dBATCH -dNOPAUSE -sPAPERSIZE=a4 -sDEVICE=pdfwrite -sOutputFile={file_path} {str(tmp)} {fods}"
+    # subprocess.check_output(cmd, shell=True)
+    res = subprocess.Popen(cmd, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL, shell=True).wait()
+    if res:
+        merge_pdf_failed.put(str(patient.patient_id) + " " + str(patient))
 
 
 def make_paths(fods):
     for fod in fods:
-        yield fod.path
+        yield fod
+
 
 def process_one(patient: Patient):
     """crée un pdf depuis le contenu de la base"""
@@ -33,10 +43,18 @@ def process_one(patient: Patient):
     file_path = "".join(
         (
             OUTPUT_PATH + "/",
-            patient.P_pnom + "_" + patient.P_pprenom + "-" + ddn + ".pdf",
+            str(patient.patient_id)
+            + "~"
+            + patient.P_pnom.replace(" ", "_")
+            + "~"
+            + patient.P_pprenom.replace(" ", "_")
+            + "~"
+            + ddn
+            + ".pdf",
+            # patient.P_pnom.replace(' ','_') + "~" + patient.P_pprenom.replace(' ', '_') + "~" + ddn + ".pdf",
         )
     )
-    append_pdf(file_path, tmp, make_paths(patient.fods))
+    append_pdf(file_path, tmp, patient)
     tmp.unlink()
     return f"ok {patient.patient_id}"
 
@@ -46,6 +64,8 @@ def proc_lot(range):
     """wrapper necessaire pour db_session"""
     for p in Patient.select()[range[0] : range[1]]:
         process_one(p)
+
+    print(f"range: {range} terminée")
 
 
 def chunk(total, size):
@@ -66,9 +86,11 @@ def generate_all():
     with concurrent.futures.ProcessPoolExecutor(
         max_workers=multiprocessing.cpu_count() * 2
     ) as executor:
-        executor.map(proc_lot, chunk(50, 8))
+        executor.map(proc_lot, chunk(100, 8))
 
 
 if __name__ == "__main__":
 
     generate_all()
+    while not merge_pdf_failed.empty():
+        print(merge_pdf_failed.get())
