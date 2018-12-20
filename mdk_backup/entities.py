@@ -96,13 +96,11 @@ class Patient(db.Entity):
 </body>
 </html
 """
-    
+
     @property
     def used_fods(self):
-        ff =  self.fods.select(lambda f: f.Fod_From in [4,5])
-        return  " ".join(f.path for f in ff)
-
-        
+        ff = self.fods.select(lambda f: f.Fod_From in [4, 5])
+        return " ".join(f.path for f in ff)
 
 
 class Fod(db.Entity):
@@ -120,7 +118,7 @@ class Fod(db.Entity):
         # 2: "PAth",
         # 3: "DocumentsBIO/Autres",
         4: ["Documents", "SPE", "Autres"],
-        5: ["Documents","Examens","Autres"],
+        5: ["Documents", "Examens", "Autres"],
     }
 
     def __str__(self):
@@ -129,11 +127,11 @@ class Fod(db.Entity):
     @property
     def path(self):
         p = Path(MDK_DOC, *self.FOG_PATHS[self.Fod_From], self.Fod_Path_Doc)
+
         if p.exists():
             return str(p.resolve())
         else:
             return ""
-
 
 
 class Consultation(db.Entity):

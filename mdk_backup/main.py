@@ -1,7 +1,7 @@
 from entities import Patient
-from pony.orm import db_session
+from pony.orm import db_session, select
 import pydf
-import concurrent.futures
+from concurrent import futures
 import multiprocessing
 from pathlib import Path
 from tempfile import NamedTemporaryFile
@@ -19,7 +19,6 @@ def append_pdf(file_path, tmp, patient):
         shutil.copy(tmp, file_path)
         return
     cmd = f"gs -q -dBATCH -dNOPAUSE -sPAPERSIZE=a4 -sDEVICE=pdfwrite -sOutputFile={file_path} {str(tmp)} {fods}"
-    # subprocess.check_output(cmd, shell=True)
     res = subprocess.Popen(cmd, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL, shell=True).wait()
     if res:
         merge_pdf_failed.put(str(patient.patient_id) + " " + str(patient))
@@ -29,9 +28,13 @@ def make_paths(fods):
     for fod in fods:
         yield fod
 
-
+@db_session
 def process_one(patient: Patient):
     """crée un pdf depuis le contenu de la base"""
+    
+    if not isinstance(patient, Patient):
+        patient = Patient[patient]
+    # print(patient)
     texte = patient.content()
     pdf = pydf.generate_pdf(texte)
     ddn = patient.P_pddn.strftime("%d_%m_%Y") if patient.P_pddn else ""
@@ -65,7 +68,7 @@ def proc_lot(range):
     for p in Patient.select()[range[0] : range[1]]:
         process_one(p)
 
-    print(f"range: {range} terminée")
+    # print(f"range: {range} terminée")
 
 
 def chunk(total, size):
@@ -78,15 +81,34 @@ def chunk(total, size):
             yield (index, total)
             index = total
 
-
+# @db_session
 def generate_all():
     with db_session:
-        total = Patient.select().count()
+        # total = Patient.select().count()
+        # total = Patient.select(lambda)[:100]
+        total = select(p.patient_id for p in Patient)[:100]
 
-    with concurrent.futures.ProcessPoolExecutor(
+
+    # with futures.ProcessPoolExecutor(
+    #     max_workers=multiprocessing.cpu_count() * 2
+    # ) as executor:
+    #     executor.map(proc_lot, chunk(1000, 8))
+
+
+    with futures.ProcessPoolExecutor(
         max_workers=multiprocessing.cpu_count() * 2
     ) as executor:
-        executor.map(proc_lot, chunk(100, 8))
+
+
+        tasks = {}
+        for patient_id in total:
+            tasks[executor.submit(process_one, patient_id)] = patient_id
+
+
+        for task in futures.as_completed(tasks):
+            print(task.result())
+            print(task.exception())
+
 
 
 if __name__ == "__main__":
