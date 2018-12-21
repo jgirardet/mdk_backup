@@ -86,7 +86,7 @@ def generate_all():
     with db_session:
         # total = Patient.select().count()
         # total = Patient.select(lambda)[:100]
-        total = select(p.patient_id for p in Patient)[:100]
+        total = select(p.patient_id for p in Patient)[:1000]
 
 
     # with futures.ProcessPoolExecutor(
@@ -105,9 +105,9 @@ def generate_all():
             tasks[executor.submit(process_one, patient_id)] = patient_id
 
 
-        for task in futures.as_completed(tasks):
-            print(task.result())
-            print(task.exception())
+        # for task in futures.as_completed(tasks):
+        #     print(task.result())
+        #     print(task.exception())
 
 
 
