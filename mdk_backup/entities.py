@@ -99,8 +99,9 @@ class Patient(db.Entity):
 
     @property
     def used_fods(self):
-        ff = self.fods.select(lambda f: f.Fod_From in [4, 5])
-        return " ".join(f.path for f in ff)
+        return [f for f in self.fods.order_by(lambda x:"fod_id") if f.Fod_From in [4, 5]and f.path] #if f.Fod_From in [4, 5] # and isinstance(f.path, Path)
+        # )
+        # return " ".join(f.path for f in ff)
 
 
 class Fod(db.Entity):
@@ -127,11 +128,12 @@ class Fod(db.Entity):
     @property
     def path(self):
         p = Path(MDK_DOC, *self.FOG_PATHS[self.Fod_From], self.Fod_Path_Doc)
-
+        # print(p, self.Fod_Type)
         if p.exists():
-            return str(p.resolve())
+            # print(" True")
+            return p.resolve()
         else:
-            return ""
+            return None
 
 
 class Consultation(db.Entity):
@@ -354,11 +356,21 @@ def ligne(id=None):
 @db_session
 def main():
     # print(Patient[1367].content())
-    print(Patient[681].content())
-    with open("rien.txt", "wt") as file:
-        file.write(Patient[490].content())
-    with open("rien2.txt", "wt") as file:
-        file.write(Patient[1367].content())
+    # a = Patient[491].fods
+    # d = [b.Fod_From for b in a]
+    # print(d)
+    # print(type(a), a)
+    # c = [c.Fod_From for c in a if c.Fod_From in [4,5]]
+    # print(type(c), c)
+    # c = [c.path for c in Patient[491].fods if c.Fod_From in [4,5] and c.path]
+    # print(type(c), c)
+
+    print(Patient[491].used_fods)
+
+    # with open("rien.txt", "wt") as file:
+    #     file.write(Patient[490].content())
+    # with open("rien2.txt", "wt") as file:
+    #     file.write(Patient[1367].content())
     # (list(print(f.to_dict()) for f in p.bios))
     # fod()
     # print(consultation(146280))
