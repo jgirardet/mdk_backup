@@ -3,10 +3,15 @@ from pony.orm import db_session, select
 import pydf
 from concurrent import futures
 import multiprocessing
+import logging
 from pathlib import Path
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 import subprocess
 import shutil
+import string
+import os.path
+import time
+import datetime
 
 OUTPUT_PATH = "/home/jimmy/mdk"
 TO_CONVERT = {".doc", ".docx", ".etf", ".o", ".rtf", ".xls"}
@@ -15,33 +20,46 @@ merge_pdf_failed = multiprocessing.Queue()
 
 TMPDIR = TemporaryDirectory()
 
+LOG = multiprocessing.get_logger()
+# LOG.setLevel(logging.INFO)
+
+TEMP_SOFFICE = TemporaryDirectory()
+
 
 def clean_formats(fods):
     paths = []
 
+    LOG.info("fods : %s", fods)
+
     for fod in fods:
         if fod.path.suffix in TO_CONVERT:
             conv = subprocess.run(
-                f"soffice --headless --convert-to pdf {str(fod.path)} --outdir {TMPDIR.name}",
+                f"soffice --headless --convert-to pdf {str(fod.path)} --outdir {TMPDIR.name} -env:UserInstallation=file://{TEMP_SOFFICE.name}",
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 shell=True,
             )
+            LOG.info("conv stdout: %s", conv.stdout.decode())
             try:
                 conv.check_returncode()
             except subprocess.CalledProcessError as err:
-                print(err)
+                LOG.error("convertiseur: %s", err)
             else:
                 paths.append(str(Path(TMPDIR.name, fod.path.stem + ".pdf")))
+                assert Path(
+                    paths[-1]
+                ).exists(), "le fichier temporaire n'a pas été créé"
         elif fod.path.suffix == ".o":
             continue
         else:
             paths.append(str(fod.path))
-
+    LOG.info("after clean formats: %s", paths)
     return " ".join(paths)
 
 
 def append_pdf(file_path, tmp, patient):
+
+    LOG.info("File path: %s \n tmp: %s \n patient: %s ", file_path, tmp, patient)
 
     fods_path = clean_formats(patient.used_fods)
 
@@ -51,14 +69,14 @@ def append_pdf(file_path, tmp, patient):
 
     cmd = f"gs -q -dBATCH -dNOPAUSE -sPAPERSIZE=a4 -sDEVICE=pdfwrite -sOutputFile={file_path} {str(tmp)} {fods_path}"
     res = subprocess.run(
-        cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+        cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT
     )
 
     try:
         res.check_returncode()
     except subprocess.CalledProcessError as err:
         merge_pdf_failed.put(str(patient.patient_id) + " " + str(patient) + " ")
-        print(err.stdout.decode())
+        LOG.error("error in append pdf:  %s", err.stdout.decode())
 
 
 @db_session
@@ -76,79 +94,75 @@ def process_one(patient: Patient):
         p.write(pdf)
         tmp = Path(p.name)
 
-    file_path = "".join(
-        (
-            OUTPUT_PATH + "/",
-            str(patient.patient_id)
-            + "~"
-            + patient.P_pnom.replace(" ", "_")
-            + "~"
-            + patient.P_pprenom.replace(" ", "_")
-            + "~"
-            + ddn
-            + ".pdf",
-            # patient.P_pnom.replace(' ','_') + "~" + patient.P_pprenom.replace(' ', '_') + "~" + ddn + ".pdf",
-        )
+    output_path = os.path.join(OUTPUT_PATH, patient.P_pnom.lower()[0])
+
+    file_path = os.path.join(
+        output_path,
+        # str(patient.patient_id)
+        # + "~"
+        patient.P_pnom.replace(" ", "_").replace("'", "-")
+        + "~"
+        + patient.P_pprenom.replace(" ", "_")
+        + "~"
+        + ddn
+        + ".pdf",
+        # patient.P_pnom.replace(' ','_') + "~" + patient.P_pprenom.replace(' ', '_') + "~" + ddn + ".pdf",
     )
     append_pdf(file_path, tmp, patient)
     tmp.unlink()
     return f"ok {patient.patient_id}"
 
 
-@db_session
-def proc_lot(range):
-    """wrapper necessaire pour db_session"""
-    for p in Patient.select()[range[0] : range[1]]:
-        process_one(p)
+def generate_all(start, end):
 
-    # print(f"range: {range} terminée")
+    debut = time.time()
 
-
-def chunk(total, size):
-    index = 0
-    while index != total:
-        if index + size < total:
-            yield (index, index + size)
-            index += size
-        else:
-            yield (index, total)
-            index = total
-
-
-# @db_session
-def generate_all():
+    # count entries
     with db_session:
-        # total = Patient.select().count()
-        # total = Patient.select(lambda)[:100]
-        total = select(p.patient_id for p in Patient)[:]#[:1000]
+        total = select(p.patient_id for p in Patient)[start:end]  # [:1000]
+        LOG.info("Total : %s", total)
 
-    # with futures.ProcessPoolExecutor(
-    #     max_workers=multiprocessing.cpu_count() * 2
-    # ) as executor:
-    #     executor.map(proc_lot, chunk(1000, 8))
-
+    # run all in executor
     with futures.ProcessPoolExecutor(
         max_workers=multiprocessing.cpu_count() * 2
     ) as executor:
 
         tasks = {}
+
         for patient_id in total:
             tasks[executor.submit(process_one, patient_id)] = patient_id
 
-        # for task in futures.as_completed(tasks):
-        #     print(task.result())
-        #     print(task.exception())
+        counter = 0
+        for tk in futures.as_completed(tasks):
+            counter += 1
+            td = str(datetime.timedelta(seconds=time.time() - debut)).split(":")
+            td[2] = td[2].split(".")[0]
+            td = "Temps écoulé: {0}h {1}m {2}s".format(*td)
+            # print(tk, end='\r', flush=True)
+            print(
+                "{0}/{1} : {2:0.0f}%     temps écoulé: {3}".format(
+                    counter, len(total), counter / len(total) * 100, td
+                ),
+                end="\r"
+            )
+
+
+def create_arbo():
+
+    for letter in string.ascii_lowercase:
+        Path(OUTPUT_PATH, letter).mkdir(exist_ok=True)
 
 
 if __name__ == "__main__":
 
-    generate_all()
+    multiprocessing.log_to_stderr()
 
-    # {'.doc', '.docx', '.etf', '.o', '.pdf', '.rtf', '.xls'}
+    create_arbo()
 
-    #1851 D'HAILLECOURT Raymond  14011 M'HAMED Benamrane  15721 PEOC'H Elea 
+    generate_all(0, 14)
+
     # séparé en répertoire par nom
 
-    # process_one(504)
+    # process_one(4)
     while not merge_pdf_failed.empty():
         print(merge_pdf_failed.get())
