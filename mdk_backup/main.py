@@ -12,6 +12,8 @@ import string
 import os.path
 import time
 import datetime
+import argparse
+from loguru import logger
 
 OUTPUT_PATH = "/home/jimmy/mdk"
 TO_CONVERT = {".doc", ".docx", ".etf", ".o", ".rtf", ".xls"}
@@ -39,7 +41,9 @@ def clean_formats(fods):
                 stderr=subprocess.STDOUT,
                 shell=True,
             )
-            LOG.info("conv stdout: %s", conv.stdout.decode())
+            LOG.info("conv stdout:")  # on laisse les 2 vu les probs d'ecnoding
+            LOG.info(conv.stdout)
+
             try:
                 conv.check_returncode()
             except subprocess.CalledProcessError as err:
@@ -85,7 +89,7 @@ def process_one(patient: Patient):
 
     if not isinstance(patient, Patient):
         patient = Patient[patient]
-    # print(patient)
+
     texte = patient.content()
     pdf = pydf.generate_pdf(texte)
     ddn = patient.P_pddn.strftime("%d_%m_%Y") if patient.P_pddn else ""
@@ -98,19 +102,16 @@ def process_one(patient: Patient):
 
     file_path = os.path.join(
         output_path,
-        # str(patient.patient_id)
-        # + "~"
         patient.P_pnom.replace(" ", "_").replace("'", "-")
         + "~"
         + patient.P_pprenom.replace(" ", "_")
         + "~"
         + ddn
         + ".pdf",
-        # patient.P_pnom.replace(' ','_') + "~" + patient.P_pprenom.replace(' ', '_') + "~" + ddn + ".pdf",
     )
     append_pdf(file_path, tmp, patient)
     tmp.unlink()
-    return f"ok {patient.patient_id}"
+    return str(patient)
 
 
 def generate_all(start, end):
@@ -139,13 +140,13 @@ def generate_all(start, end):
             td[2] = td[2].split(".")[0]
             td = "Temps écoulé: {0}h {1}m {2}s".format(*td)
             # print(tk, end='\r', flush=True)
+            end = "\r" if counter < len(total) else None
             print(
                 "{0}/{1} : {2:0.0f}%     temps écoulé: {3}".format(
                     counter, len(total), counter / len(total) * 100, td
                 ),
-                end="\r"
+                end=end,
             )
-
 
 def create_arbo():
 
@@ -153,16 +154,59 @@ def create_arbo():
         Path(OUTPUT_PATH, letter).mkdir(exist_ok=True)
 
 
-if __name__ == "__main__":
-
-    multiprocessing.log_to_stderr()
+def main(debut, fin=None, one = False):
 
     create_arbo()
-
-    generate_all(0, 14)
+    if one:
+        fin = debut +1
+    generate_all(debut, fin)
 
     # séparé en répertoire par nom
 
-    # process_one(4)
     while not merge_pdf_failed.empty():
         print(merge_pdf_failed.get())
+
+
+if __name__ == "__main__":
+    import sys
+    logger.remove()
+    logger.add(sys.stderr, level="INFO")
+    logger.info('info')
+    logger.debug('debuga')
+    logger.error('error')
+
+    multiprocessing.log_to_stderr()
+
+    parser = argparse.ArgumentParser(description="Utilitaire de sauvegarde médiclick")
+    parser.add_argument(
+        "debut",
+        type=int,
+        nargs="?",
+        help="début d'intervalle ou dossier seul si fin absent, préciser 0 premier élément souhaité",
+    )
+    parser.add_argument(
+        "fin", type=int, nargs="?", help="fin d'intervalle, default=infini"
+    )
+    parser.add_argument("--source", action="store", required=True, help = "Dossier source")
+    parser.add_argument("--target", action="store", required=True, help = "Dossier cible")
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("--all", action="store_true", help="Sauvegarde complète")
+
+    group.add_argument("--solo", action="store_true", help="Sauvegarde d'un 1 seul dossier")
+
+    args = parser.parse_args()
+
+
+    if args.all:
+        main(None, None)
+
+    elif args.solo:
+        if args.debut == None:
+            parser.error("Un numéro de dossier doit être précisé")
+        res = main(args.debut, one=True)
+
+    elif args.debut and args.fin:
+        main(args.debut, args.fin)
+
+    else:
+        parser.print_help()

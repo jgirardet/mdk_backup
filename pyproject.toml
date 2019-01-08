@@ -9,6 +9,7 @@ python = "^3.7"
 pony = "^0.7.6"
 pymysql = "^0.9.2"
 python-pdf = "^0.36.0"
+loguru = "^0.2.4"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.2"
